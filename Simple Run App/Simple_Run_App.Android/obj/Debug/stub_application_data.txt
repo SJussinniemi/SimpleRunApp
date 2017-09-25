@@ -1,0 +1,2 @@
+android.app.Application
+Simple_Run_App.Android
