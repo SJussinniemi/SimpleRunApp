@@ -17,8 +17,28 @@ namespace Simple_Run_App {
     public partial class Exercise : global::Xamarin.Forms.ContentPage {
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.Label TimerLabel;
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.Label TimerCurSpeed;
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.Label TimerDistance;
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.Button StartBtn;
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.Button EndBtn;
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
             this.LoadFromXaml(typeof(Exercise));
+            TimerLabel = this.FindByName<global::Xamarin.Forms.Label>("TimerLabel");
+            TimerCurSpeed = this.FindByName<global::Xamarin.Forms.Label>("TimerCurSpeed");
+            TimerDistance = this.FindByName<global::Xamarin.Forms.Label>("TimerDistance");
+            StartBtn = this.FindByName<global::Xamarin.Forms.Button>("StartBtn");
+            EndBtn = this.FindByName<global::Xamarin.Forms.Button>("EndBtn");
         }
     }
 }

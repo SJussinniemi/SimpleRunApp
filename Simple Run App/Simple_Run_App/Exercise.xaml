@@ -3,4 +3,29 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Simple_Run_App.Exercise"
              Title="Excercise">
+
+    <StackLayout>
+        <Label x:Name="TimerLabel"
+               Text="Timer Label"
+               FontSize="Medium"
+               />
+
+        <Label x:Name="TimerCurSpeed"
+               Text="CurrentSpeed Label"
+               FontSize="Medium"
+               />
+
+        <Label x:Name="TimerDistance"
+               Text="Distance Label"
+               FontSize="Medium"
+               />
+
+        <Button x:Name="StartBtn"
+                Text="Start Running"
+                />
+
+        <Button x:Name="EndBtn"
+                Text="End"
+                />
+    </StackLayout>
 </ContentPage>
