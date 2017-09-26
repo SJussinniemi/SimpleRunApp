@@ -2,8 +2,8 @@
 <Paths>
   <Jars></Jars>
   <ResolvedResourceDirectories>
-    <ResolvedResourceDirectory>P:\3.Vuosi\Mobile Dev\Project\SimpleRunApp\Simple Run App\Simple_Run_App.Android\obj\Debug\__library_projects__\Xamarin.Forms.Platform.Android\library_project_imports\res</ResolvedResourceDirectory>
-    <ResolvedResourceDirectory>P:\3.Vuosi\Mobile Dev\Project\SimpleRunApp\Simple Run App\Simple_Run_App.Android\obj\Debug\__library_projects__\Xamarin.Forms.Platform\library_project_imports\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>H:\Koodia\HIMA\XamarinProjekti\SimpleRunApp\Simple Run App\Simple_Run_App.Android\obj\Debug\__library_projects__\Xamarin.Forms.Platform.Android\library_project_imports\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>H:\Koodia\HIMA\XamarinProjekti\SimpleRunApp\Simple Run App\Simple_Run_App.Android\obj\Debug\__library_projects__\Xamarin.Forms.Platform\library_project_imports\res</ResolvedResourceDirectory>
   </ResolvedResourceDirectories>
   <ResolvedAssetDirectories>
     <ResolvedAssetDirectory>obj\Debug\__library_projects__\Xamarin.Forms.Platform.Android\library_project_imports\assets</ResolvedAssetDirectory>
@@ -11,7 +11,7 @@
   </ResolvedAssetDirectories>
   <ResolvedEnvironmentFiles />
   <ResolvedResourceDirectoryStamps>
-    <ResolvedResourceDirectoryStamp>P:\3.Vuosi\Mobile Dev\Project\SimpleRunApp\Simple Run App\Simple_Run_App.Android\obj\Debug\__library_projects__\Xamarin.Forms.Platform.Android.stamp</ResolvedResourceDirectoryStamp>
-    <ResolvedResourceDirectoryStamp>P:\3.Vuosi\Mobile Dev\Project\SimpleRunApp\Simple Run App\Simple_Run_App.Android\obj\Debug\__library_projects__\Xamarin.Forms.Platform.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>H:\Koodia\HIMA\XamarinProjekti\SimpleRunApp\Simple Run App\Simple_Run_App.Android\obj\Debug\__library_projects__\Xamarin.Forms.Platform.Android.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>H:\Koodia\HIMA\XamarinProjekti\SimpleRunApp\Simple Run App\Simple_Run_App.Android\obj\Debug\__library_projects__\Xamarin.Forms.Platform.stamp</ResolvedResourceDirectoryStamp>
   </ResolvedResourceDirectoryStamps>
 </Paths>
