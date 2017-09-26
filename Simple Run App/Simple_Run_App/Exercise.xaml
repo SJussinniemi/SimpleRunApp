@@ -24,6 +24,10 @@
                 Text="Start Running"
                 />
 
+        <Button x:Name="PauseBtn"
+                Text="Pause"
+                />
+        
         <Button x:Name="EndBtn"
                 Text="End"
                 />
