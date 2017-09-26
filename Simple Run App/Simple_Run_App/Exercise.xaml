@@ -24,7 +24,7 @@
                 Text="Start Running"
                 />
 
-        <Button x:Name="PauseBtn"
+        <Button x:Name="PauseBtn" IsVisible="False"
                 Text="Pause"
                 />
         
