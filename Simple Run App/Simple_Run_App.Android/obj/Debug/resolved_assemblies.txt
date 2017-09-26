@@ -1,47 +1,48 @@
-P:\3.Vuosi\Mobile Dev\Project\SimpleRunApp\Simple Run App\Simple_Run_App.Android\obj\Debug\android\assets\Simple_Run_App.Android.dll
-P:\3.Vuosi\Mobile Dev\Project\SimpleRunApp\Simple Run App\Simple_Run_App.Android\obj\Debug\android\assets\FormsViewGroup.dll
-P:\3.Vuosi\Mobile Dev\Project\SimpleRunApp\Simple Run App\Simple_Run_App.Android\obj\Debug\android\assets\Xamarin.Android.Support.Animated.Vector.Drawable.dll
-P:\3.Vuosi\Mobile Dev\Project\SimpleRunApp\Simple Run App\Simple_Run_App.Android\obj\Debug\android\assets\Xamarin.Android.Support.Design.dll
-P:\3.Vuosi\Mobile Dev\Project\SimpleRunApp\Simple Run App\Simple_Run_App.Android\obj\Debug\android\assets\Xamarin.Android.Support.v4.dll
-P:\3.Vuosi\Mobile Dev\Project\SimpleRunApp\Simple Run App\Simple_Run_App.Android\obj\Debug\android\assets\Xamarin.Android.Support.v7.AppCompat.dll
-P:\3.Vuosi\Mobile Dev\Project\SimpleRunApp\Simple Run App\Simple_Run_App.Android\obj\Debug\android\assets\Xamarin.Android.Support.v7.CardView.dll
-P:\3.Vuosi\Mobile Dev\Project\SimpleRunApp\Simple Run App\Simple_Run_App.Android\obj\Debug\android\assets\Xamarin.Android.Support.v7.MediaRouter.dll
-P:\3.Vuosi\Mobile Dev\Project\SimpleRunApp\Simple Run App\Simple_Run_App.Android\obj\Debug\android\assets\Xamarin.Android.Support.v7.RecyclerView.dll
-P:\3.Vuosi\Mobile Dev\Project\SimpleRunApp\Simple Run App\Simple_Run_App.Android\obj\Debug\android\assets\Xamarin.Android.Support.Vector.Drawable.dll
-P:\3.Vuosi\Mobile Dev\Project\SimpleRunApp\Simple Run App\Simple_Run_App.Android\obj\Debug\android\assets\Xamarin.Forms.Core.dll
-P:\3.Vuosi\Mobile Dev\Project\SimpleRunApp\Simple Run App\Simple_Run_App.Android\obj\Debug\android\assets\Xamarin.Forms.Platform.Android.dll
-P:\3.Vuosi\Mobile Dev\Project\SimpleRunApp\Simple Run App\Simple_Run_App.Android\obj\Debug\android\assets\Xamarin.Forms.Platform.dll
-P:\3.Vuosi\Mobile Dev\Project\SimpleRunApp\Simple Run App\Simple_Run_App.Android\obj\Debug\android\assets\Xamarin.Forms.Xaml.dll
-P:\3.Vuosi\Mobile Dev\Project\SimpleRunApp\Simple Run App\Simple_Run_App.Android\obj\Debug\android\assets\Java.Interop.dll
-P:\3.Vuosi\Mobile Dev\Project\SimpleRunApp\Simple Run App\Simple_Run_App.Android\obj\Debug\android\assets\Mono.Android.dll
-P:\3.Vuosi\Mobile Dev\Project\SimpleRunApp\Simple Run App\Simple_Run_App.Android\obj\Debug\android\assets\mscorlib.dll
-P:\3.Vuosi\Mobile Dev\Project\SimpleRunApp\Simple Run App\Simple_Run_App.Android\obj\Debug\android\assets\System.Core.dll
-P:\3.Vuosi\Mobile Dev\Project\SimpleRunApp\Simple Run App\Simple_Run_App.Android\obj\Debug\android\assets\System.dll
-P:\3.Vuosi\Mobile Dev\Project\SimpleRunApp\Simple Run App\Simple_Run_App.Android\obj\Debug\android\assets\System.Xml.dll
-P:\3.Vuosi\Mobile Dev\Project\SimpleRunApp\Simple Run App\Simple_Run_App.Android\obj\Debug\android\assets\System.Xml.Linq.dll
-P:\3.Vuosi\Mobile Dev\Project\SimpleRunApp\Simple Run App\Simple_Run_App.Android\obj\Debug\android\assets\Simple_Run_App.dll
-P:\3.Vuosi\Mobile Dev\Project\SimpleRunApp\Simple Run App\Simple_Run_App.Android\obj\Debug\android\assets\System.Runtime.dll
-P:\3.Vuosi\Mobile Dev\Project\SimpleRunApp\Simple Run App\Simple_Run_App.Android\obj\Debug\android\assets\System.ComponentModel.Composition.dll
-P:\3.Vuosi\Mobile Dev\Project\SimpleRunApp\Simple Run App\Simple_Run_App.Android\obj\Debug\android\assets\System.Collections.dll
-P:\3.Vuosi\Mobile Dev\Project\SimpleRunApp\Simple Run App\Simple_Run_App.Android\obj\Debug\android\assets\System.Diagnostics.Debug.dll
-P:\3.Vuosi\Mobile Dev\Project\SimpleRunApp\Simple Run App\Simple_Run_App.Android\obj\Debug\android\assets\System.Threading.Tasks.dll
-P:\3.Vuosi\Mobile Dev\Project\SimpleRunApp\Simple Run App\Simple_Run_App.Android\obj\Debug\android\assets\System.ObjectModel.dll
-P:\3.Vuosi\Mobile Dev\Project\SimpleRunApp\Simple Run App\Simple_Run_App.Android\obj\Debug\android\assets\System.Globalization.dll
-P:\3.Vuosi\Mobile Dev\Project\SimpleRunApp\Simple Run App\Simple_Run_App.Android\obj\Debug\android\assets\System.ComponentModel.dll
-P:\3.Vuosi\Mobile Dev\Project\SimpleRunApp\Simple Run App\Simple_Run_App.Android\obj\Debug\android\assets\System.Xml.ReaderWriter.dll
-P:\3.Vuosi\Mobile Dev\Project\SimpleRunApp\Simple Run App\Simple_Run_App.Android\obj\Debug\android\assets\System.Reflection.dll
-P:\3.Vuosi\Mobile Dev\Project\SimpleRunApp\Simple Run App\Simple_Run_App.Android\obj\Debug\android\assets\System.Linq.Expressions.dll
-P:\3.Vuosi\Mobile Dev\Project\SimpleRunApp\Simple Run App\Simple_Run_App.Android\obj\Debug\android\assets\System.IO.dll
-P:\3.Vuosi\Mobile Dev\Project\SimpleRunApp\Simple Run App\Simple_Run_App.Android\obj\Debug\android\assets\System.Dynamic.Runtime.dll
-P:\3.Vuosi\Mobile Dev\Project\SimpleRunApp\Simple Run App\Simple_Run_App.Android\obj\Debug\android\assets\System.Threading.dll
-P:\3.Vuosi\Mobile Dev\Project\SimpleRunApp\Simple Run App\Simple_Run_App.Android\obj\Debug\android\assets\System.Runtime.Extensions.dll
-P:\3.Vuosi\Mobile Dev\Project\SimpleRunApp\Simple Run App\Simple_Run_App.Android\obj\Debug\android\assets\System.Linq.dll
-P:\3.Vuosi\Mobile Dev\Project\SimpleRunApp\Simple Run App\Simple_Run_App.Android\obj\Debug\android\assets\System.Reflection.Extensions.dll
-P:\3.Vuosi\Mobile Dev\Project\SimpleRunApp\Simple Run App\Simple_Run_App.Android\obj\Debug\android\assets\System.Net.Http.dll
-P:\3.Vuosi\Mobile Dev\Project\SimpleRunApp\Simple Run App\Simple_Run_App.Android\obj\Debug\android\assets\System.Runtime.Serialization.dll
-P:\3.Vuosi\Mobile Dev\Project\SimpleRunApp\Simple Run App\Simple_Run_App.Android\obj\Debug\android\assets\System.ServiceModel.Internals.dll
-P:\3.Vuosi\Mobile Dev\Project\SimpleRunApp\Simple Run App\Simple_Run_App.Android\obj\Debug\android\assets\System.Text.RegularExpressions.dll
-P:\3.Vuosi\Mobile Dev\Project\SimpleRunApp\Simple Run App\Simple_Run_App.Android\obj\Debug\android\assets\System.Collections.Concurrent.dll
-P:\3.Vuosi\Mobile Dev\Project\SimpleRunApp\Simple Run App\Simple_Run_App.Android\obj\Debug\android\assets\System.Runtime.InteropServices.dll
-P:\3.Vuosi\Mobile Dev\Project\SimpleRunApp\Simple Run App\Simple_Run_App.Android\obj\Debug\android\assets\System.Resources.ResourceManager.dll
-P:\3.Vuosi\Mobile Dev\Project\SimpleRunApp\Simple Run App\Simple_Run_App.Android\obj\Debug\android\assets\System.Diagnostics.Tools.dll
+H:\Koodia\HIMA\XamarinProjekti\SimpleRunApp\Simple Run App\Simple_Run_App.Android\obj\Debug\android\assets\Simple_Run_App.Android.dll
+H:\Koodia\HIMA\XamarinProjekti\SimpleRunApp\Simple Run App\Simple_Run_App.Android\obj\Debug\android\assets\FormsViewGroup.dll
+H:\Koodia\HIMA\XamarinProjekti\SimpleRunApp\Simple Run App\Simple_Run_App.Android\obj\Debug\android\assets\Xamarin.Android.Support.Animated.Vector.Drawable.dll
+H:\Koodia\HIMA\XamarinProjekti\SimpleRunApp\Simple Run App\Simple_Run_App.Android\obj\Debug\android\assets\Xamarin.Android.Support.Design.dll
+H:\Koodia\HIMA\XamarinProjekti\SimpleRunApp\Simple Run App\Simple_Run_App.Android\obj\Debug\android\assets\Xamarin.Android.Support.v4.dll
+H:\Koodia\HIMA\XamarinProjekti\SimpleRunApp\Simple Run App\Simple_Run_App.Android\obj\Debug\android\assets\Xamarin.Android.Support.v7.AppCompat.dll
+H:\Koodia\HIMA\XamarinProjekti\SimpleRunApp\Simple Run App\Simple_Run_App.Android\obj\Debug\android\assets\Xamarin.Android.Support.v7.CardView.dll
+H:\Koodia\HIMA\XamarinProjekti\SimpleRunApp\Simple Run App\Simple_Run_App.Android\obj\Debug\android\assets\Xamarin.Android.Support.v7.MediaRouter.dll
+H:\Koodia\HIMA\XamarinProjekti\SimpleRunApp\Simple Run App\Simple_Run_App.Android\obj\Debug\android\assets\Xamarin.Android.Support.v7.RecyclerView.dll
+H:\Koodia\HIMA\XamarinProjekti\SimpleRunApp\Simple Run App\Simple_Run_App.Android\obj\Debug\android\assets\Xamarin.Android.Support.Vector.Drawable.dll
+H:\Koodia\HIMA\XamarinProjekti\SimpleRunApp\Simple Run App\Simple_Run_App.Android\obj\Debug\android\assets\Xamarin.Forms.Core.dll
+H:\Koodia\HIMA\XamarinProjekti\SimpleRunApp\Simple Run App\Simple_Run_App.Android\obj\Debug\android\assets\Xamarin.Forms.Platform.Android.dll
+H:\Koodia\HIMA\XamarinProjekti\SimpleRunApp\Simple Run App\Simple_Run_App.Android\obj\Debug\android\assets\Xamarin.Forms.Platform.dll
+H:\Koodia\HIMA\XamarinProjekti\SimpleRunApp\Simple Run App\Simple_Run_App.Android\obj\Debug\android\assets\Xamarin.Forms.Xaml.dll
+H:\Koodia\HIMA\XamarinProjekti\SimpleRunApp\Simple Run App\Simple_Run_App.Android\obj\Debug\android\assets\Java.Interop.dll
+H:\Koodia\HIMA\XamarinProjekti\SimpleRunApp\Simple Run App\Simple_Run_App.Android\obj\Debug\android\assets\Mono.Android.dll
+H:\Koodia\HIMA\XamarinProjekti\SimpleRunApp\Simple Run App\Simple_Run_App.Android\obj\Debug\android\assets\mscorlib.dll
+H:\Koodia\HIMA\XamarinProjekti\SimpleRunApp\Simple Run App\Simple_Run_App.Android\obj\Debug\android\assets\System.Core.dll
+H:\Koodia\HIMA\XamarinProjekti\SimpleRunApp\Simple Run App\Simple_Run_App.Android\obj\Debug\android\assets\System.dll
+H:\Koodia\HIMA\XamarinProjekti\SimpleRunApp\Simple Run App\Simple_Run_App.Android\obj\Debug\android\assets\System.Xml.dll
+H:\Koodia\HIMA\XamarinProjekti\SimpleRunApp\Simple Run App\Simple_Run_App.Android\obj\Debug\android\assets\System.Xml.Linq.dll
+H:\Koodia\HIMA\XamarinProjekti\SimpleRunApp\Simple Run App\Simple_Run_App.Android\obj\Debug\android\assets\Simple_Run_App.dll
+H:\Koodia\HIMA\XamarinProjekti\SimpleRunApp\Simple Run App\Simple_Run_App.Android\obj\Debug\android\assets\System.Runtime.dll
+H:\Koodia\HIMA\XamarinProjekti\SimpleRunApp\Simple Run App\Simple_Run_App.Android\obj\Debug\android\assets\System.ComponentModel.Composition.dll
+H:\Koodia\HIMA\XamarinProjekti\SimpleRunApp\Simple Run App\Simple_Run_App.Android\obj\Debug\android\assets\System.Collections.dll
+H:\Koodia\HIMA\XamarinProjekti\SimpleRunApp\Simple Run App\Simple_Run_App.Android\obj\Debug\android\assets\System.Diagnostics.Debug.dll
+H:\Koodia\HIMA\XamarinProjekti\SimpleRunApp\Simple Run App\Simple_Run_App.Android\obj\Debug\android\assets\System.Threading.Tasks.dll
+H:\Koodia\HIMA\XamarinProjekti\SimpleRunApp\Simple Run App\Simple_Run_App.Android\obj\Debug\android\assets\System.ObjectModel.dll
+H:\Koodia\HIMA\XamarinProjekti\SimpleRunApp\Simple Run App\Simple_Run_App.Android\obj\Debug\android\assets\System.Globalization.dll
+H:\Koodia\HIMA\XamarinProjekti\SimpleRunApp\Simple Run App\Simple_Run_App.Android\obj\Debug\android\assets\System.ComponentModel.dll
+H:\Koodia\HIMA\XamarinProjekti\SimpleRunApp\Simple Run App\Simple_Run_App.Android\obj\Debug\android\assets\System.Xml.ReaderWriter.dll
+H:\Koodia\HIMA\XamarinProjekti\SimpleRunApp\Simple Run App\Simple_Run_App.Android\obj\Debug\android\assets\System.Reflection.dll
+H:\Koodia\HIMA\XamarinProjekti\SimpleRunApp\Simple Run App\Simple_Run_App.Android\obj\Debug\android\assets\System.Linq.Expressions.dll
+H:\Koodia\HIMA\XamarinProjekti\SimpleRunApp\Simple Run App\Simple_Run_App.Android\obj\Debug\android\assets\System.IO.dll
+H:\Koodia\HIMA\XamarinProjekti\SimpleRunApp\Simple Run App\Simple_Run_App.Android\obj\Debug\android\assets\System.Dynamic.Runtime.dll
+H:\Koodia\HIMA\XamarinProjekti\SimpleRunApp\Simple Run App\Simple_Run_App.Android\obj\Debug\android\assets\System.Threading.dll
+H:\Koodia\HIMA\XamarinProjekti\SimpleRunApp\Simple Run App\Simple_Run_App.Android\obj\Debug\android\assets\System.Runtime.Extensions.dll
+H:\Koodia\HIMA\XamarinProjekti\SimpleRunApp\Simple Run App\Simple_Run_App.Android\obj\Debug\android\assets\System.Linq.dll
+H:\Koodia\HIMA\XamarinProjekti\SimpleRunApp\Simple Run App\Simple_Run_App.Android\obj\Debug\android\assets\System.Reflection.Extensions.dll
+H:\Koodia\HIMA\XamarinProjekti\SimpleRunApp\Simple Run App\Simple_Run_App.Android\obj\Debug\android\assets\System.Net.Http.dll
+H:\Koodia\HIMA\XamarinProjekti\SimpleRunApp\Simple Run App\Simple_Run_App.Android\obj\Debug\android\assets\System.Runtime.Serialization.dll
+H:\Koodia\HIMA\XamarinProjekti\SimpleRunApp\Simple Run App\Simple_Run_App.Android\obj\Debug\android\assets\System.ServiceModel.Internals.dll
+H:\Koodia\HIMA\XamarinProjekti\SimpleRunApp\Simple Run App\Simple_Run_App.Android\obj\Debug\android\assets\System.Text.RegularExpressions.dll
+H:\Koodia\HIMA\XamarinProjekti\SimpleRunApp\Simple Run App\Simple_Run_App.Android\obj\Debug\android\assets\System.Collections.Concurrent.dll
+H:\Koodia\HIMA\XamarinProjekti\SimpleRunApp\Simple Run App\Simple_Run_App.Android\obj\Debug\android\assets\System.Runtime.InteropServices.dll
+H:\Koodia\HIMA\XamarinProjekti\SimpleRunApp\Simple Run App\Simple_Run_App.Android\obj\Debug\android\assets\Mono.Security.dll
+H:\Koodia\HIMA\XamarinProjekti\SimpleRunApp\Simple Run App\Simple_Run_App.Android\obj\Debug\android\assets\System.Resources.ResourceManager.dll
+H:\Koodia\HIMA\XamarinProjekti\SimpleRunApp\Simple Run App\Simple_Run_App.Android\obj\Debug\android\assets\System.Diagnostics.Tools.dll

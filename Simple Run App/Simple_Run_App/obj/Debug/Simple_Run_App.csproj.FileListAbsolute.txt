@@ -36,3 +36,21 @@ P:\3.Vuosi\Mobile Dev\Project\SimpleRunApp\Simple Run App\Simple_Run_App\obj\Deb
 P:\3.Vuosi\Mobile Dev\Project\SimpleRunApp\Simple Run App\Simple_Run_App\obj\Debug\Simple_Run_App.pdb
 P:\3.Vuosi\Mobile Dev\Project\SimpleRunApp\Simple Run App\Simple_Run_App\obj\Debug\Simple_Run_App.dll.mdb
 P:\3.Vuosi\Mobile Dev\Project\SimpleRunApp\Simple Run App\Simple_Run_App\bin\Debug\Simple_Run_App.dll.mdb
+H:\Koodia\HIMA\XamarinProjekti\SimpleRunApp\Simple Run App\Simple_Run_App\bin\Debug\Simple_Run_App.dll
+H:\Koodia\HIMA\XamarinProjekti\SimpleRunApp\Simple Run App\Simple_Run_App\bin\Debug\Simple_Run_App.pdb
+H:\Koodia\HIMA\XamarinProjekti\SimpleRunApp\Simple Run App\Simple_Run_App\bin\Debug\Xamarin.Forms.Core.dll
+H:\Koodia\HIMA\XamarinProjekti\SimpleRunApp\Simple Run App\Simple_Run_App\bin\Debug\Xamarin.Forms.Platform.dll
+H:\Koodia\HIMA\XamarinProjekti\SimpleRunApp\Simple Run App\Simple_Run_App\bin\Debug\Xamarin.Forms.Xaml.dll
+H:\Koodia\HIMA\XamarinProjekti\SimpleRunApp\Simple Run App\Simple_Run_App\bin\Debug\Xamarin.Forms.Core.pdb
+H:\Koodia\HIMA\XamarinProjekti\SimpleRunApp\Simple Run App\Simple_Run_App\bin\Debug\Xamarin.Forms.Core.xml
+H:\Koodia\HIMA\XamarinProjekti\SimpleRunApp\Simple Run App\Simple_Run_App\bin\Debug\Xamarin.Forms.Platform.pdb
+H:\Koodia\HIMA\XamarinProjekti\SimpleRunApp\Simple Run App\Simple_Run_App\bin\Debug\Xamarin.Forms.Xaml.pdb
+H:\Koodia\HIMA\XamarinProjekti\SimpleRunApp\Simple Run App\Simple_Run_App\bin\Debug\Xamarin.Forms.Xaml.xml
+H:\Koodia\HIMA\XamarinProjekti\SimpleRunApp\Simple Run App\Simple_Run_App\obj\Debug\Simple_Run_App.csprojResolveAssemblyReference.cache
+H:\Koodia\HIMA\XamarinProjekti\SimpleRunApp\Simple Run App\Simple_Run_App\obj\Debug\Simple_Run_App.csproj.CoreCompileInputs.cache
+H:\Koodia\HIMA\XamarinProjekti\SimpleRunApp\Simple Run App\Simple_Run_App\obj\Debug\Simple_Run_App.MainPage.xaml.g.cs
+H:\Koodia\HIMA\XamarinProjekti\SimpleRunApp\Simple Run App\Simple_Run_App\obj\Debug\Simple_Run_App.App.xaml.g.cs
+H:\Koodia\HIMA\XamarinProjekti\SimpleRunApp\Simple Run App\Simple_Run_App\obj\Debug\Simple_Run_App.HistoryPage.xaml.g.cs
+H:\Koodia\HIMA\XamarinProjekti\SimpleRunApp\Simple Run App\Simple_Run_App\obj\Debug\Simple_Run_App.Exercise.xaml.g.cs
+H:\Koodia\HIMA\XamarinProjekti\SimpleRunApp\Simple Run App\Simple_Run_App\obj\Debug\Simple_Run_App.dll
+H:\Koodia\HIMA\XamarinProjekti\SimpleRunApp\Simple Run App\Simple_Run_App\obj\Debug\Simple_Run_App.pdb

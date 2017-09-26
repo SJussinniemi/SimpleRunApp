@@ -20,15 +20,17 @@
                FontSize="Medium"
                />
 
-        <Button x:Name="StartBtn"
+        <Button x:Name="StartBtn" Clicked="onStart"
                 Text="Start Running"
+                
                 />
 
         <Button x:Name="PauseBtn" IsVisible="False"
+                Clicked="onPause"
                 Text="Pause"
                 />
         
-        <Button x:Name="EndBtn"
+        <Button x:Name="EndBtn" IsEnabled="False"
                 Text="End"
                 />
     </StackLayout>

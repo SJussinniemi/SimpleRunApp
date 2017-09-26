@@ -16,5 +16,19 @@ namespace Simple_Run_App
         {
             InitializeComponent();
         }
+
+        private void onStart(object sender, EventArgs e)
+        {
+            PauseBtn.IsVisible = true;
+            StartBtn.IsVisible = false;
+            EndBtn.IsEnabled = false;
+        }
+
+        private void onPause(object sender, EventArgs e)
+        {
+            PauseBtn.IsVisible = false;
+            StartBtn.IsVisible = true;
+            EndBtn.IsEnabled = true;
+        }
     }
 }
