@@ -4,6 +4,30 @@
              x:Class="Simple_Run_App.Exercise"
              Title="Excercise">
 
-    <Label Text="gittest"/>
+    <StackLayout>
+        <Label x:Name="TimerLabel"
+               Text="Timer Label"
+               FontSize="Medium"
+               />
 
+        <Label x:Name="TimerCurSpeed"
+               Text="CurrentSpeed Label"
+               FontSize="Medium"
+               />
+
+        <Label x:Name="TimerDistance"
+               Text="Distance Label"
+               FontSize="Medium"
+               />
+
+        <Button x:Name="StartBtn"
+                Text="Start Running"
+                Clicked="StartBtn_Clicked"
+                />
+
+        <Button x:Name="EndBtn"
+                Text="End"
+                Clicked="End_Button"
+                />
+    </StackLayout>
 </ContentPage>
