@@ -7,7 +7,7 @@ using Xamarin.Forms.Maps;
 
 namespace Simple_Run_App
 {
-    class ExerciseMap : Map
+    public class ExerciseMap : Map
     {
         public List<Position> RouteCoordinates { get; set; }
 
