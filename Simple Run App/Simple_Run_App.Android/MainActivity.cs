@@ -6,6 +6,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
+using Simple_Run_App;
 
 namespace Simple_Run_App.Droid
 {
@@ -20,6 +21,7 @@ namespace Simple_Run_App.Droid
             base.OnCreate(bundle);
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
+            global::Xamarin.FormsMaps.Init(this, bundle);
             LoadApplication(new App());
         }
     }

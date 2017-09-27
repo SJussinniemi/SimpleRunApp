@@ -11,9 +11,11 @@
 namespace Simple_Run_App {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("H:\\Koodia\\HIMA\\XamarinProjekti\\SimpleRunApp\\Simple Run App\\Simple_Run_App\\Exercis" +
-        "e.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("H:\\Koodia\\HIMA\\gps\\SimpleRunApp-sami\\Simple Run App\\Simple_Run_App\\Exercise.xaml")]
     public partial class Exercise : global::Xamarin.Forms.ContentPage {
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::MapOverlay.ExerciseMap exerciseMap;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private global::Xamarin.Forms.Label TimerLabel;
@@ -34,14 +36,27 @@ namespace Simple_Run_App {
         private global::Xamarin.Forms.Button EndBtn;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.Button CurLocBtn;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.Label CurLocLatitude;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.Label CurLocLongitude;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
             global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(Exercise));
+            exerciseMap = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::MapOverlay.ExerciseMap>(this, "exerciseMap");
             TimerLabel = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Label>(this, "TimerLabel");
             TimerCurSpeed = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Label>(this, "TimerCurSpeed");
             TimerDistance = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Label>(this, "TimerDistance");
             StartBtn = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Button>(this, "StartBtn");
             PauseBtn = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Button>(this, "PauseBtn");
             EndBtn = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Button>(this, "EndBtn");
+            CurLocBtn = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Button>(this, "CurLocBtn");
+            CurLocLatitude = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Label>(this, "CurLocLatitude");
+            CurLocLongitude = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Label>(this, "CurLocLongitude");
         }
     }
 }

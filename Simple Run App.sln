@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26228.9
+VisualStudioVersion = 15.0.26730.16
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Simple_Run_App.Android", "Simple Run App\Simple_Run_App.Android\Simple_Run_App.Android.csproj", "{C94BF183-4C12-4037-975E-9D624FE18EF1}"
 EndProject
@@ -158,5 +158,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C0A4EE26-E3BA-4B5B-A5F4-FA8F07C05D93}
 	EndGlobalSection
 EndGlobal

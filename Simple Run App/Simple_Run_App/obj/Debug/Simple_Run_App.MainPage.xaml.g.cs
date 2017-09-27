@@ -9,16 +9,14 @@
 //------------------------------------------------------------------------------
 
 namespace Simple_Run_App {
-    using System;
-    using Xamarin.Forms;
-    using Xamarin.Forms.Xaml;
     
     
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("H:\\Koodia\\HIMA\\gps\\SimpleRunApp-sami\\Simple Run App\\Simple_Run_App\\MainPage.xaml")]
     public partial class MainPage : global::Xamarin.Forms.TabbedPage {
         
-        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
-            this.LoadFromXaml(typeof(MainPage));
+            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(MainPage));
         }
     }
 }

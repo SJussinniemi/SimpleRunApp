@@ -1,11 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:MapOverlay;assembly=MapOverlay"
              x:Class="Simple_Run_App.Exercise"
              Title="Excercise">
+    <ScrollView>
 
-    <StackLayout>
-        <Label x:Name="TimerLabel"
+        <StackLayout>
+            <local:ExerciseMap x:Name="exerciseMap" MapType="Street" WidthRequest="{x:Static local:App.ScreenWidth}" HeightRequest="{x:Static local:App.ScreenHeight}" />
+            
+            <Label x:Name="TimerLabel"
                Text="Timer Label"
                FontSize="Medium"
                />
@@ -20,18 +24,34 @@
                FontSize="Medium"
                />
 
-        <Button x:Name="StartBtn" Clicked="onStart"
+            <Button x:Name="StartBtn" Clicked="StartBtn_Clicked"
                 Text="Start Running"
                 
                 />
 
-        <Button x:Name="PauseBtn" IsVisible="False"
+            <Button x:Name="PauseBtn" IsVisible="False"
                 Clicked="onPause"
                 Text="Pause"
                 />
-        
-        <Button x:Name="EndBtn" IsEnabled="False"
+
+            <Button x:Name="EndBtn" IsEnabled="False"
                 Text="End"
                 />
+
+            <Button x:Name="CurLocBtn"
+                Text="My location"
+                Clicked="CurLocBtn_Clicked"
+                />
+
+        <Label x:Name="CurLocLatitude"
+               Text="cur location latitude"
+               />
+
+        <Label x:Name="CurLocLongitude"
+               Text="cur location longitude"
+               />
+
     </StackLayout>
+</ScrollView>
+    
 </ContentPage>
