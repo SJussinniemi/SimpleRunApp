@@ -11,11 +11,9 @@
 namespace Simple_Run_App {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("H:\\Koodia\\HIMA\\gps\\SimpleRunApp-sami\\Simple Run App\\Simple_Run_App\\Exercise.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("H:\\Koodia\\HIMA\\XamarinProjekti\\SimpleRunApp\\Simple Run App\\Simple_Run_App\\Exercis" +
+        "e.xaml")]
     public partial class Exercise : global::Xamarin.Forms.ContentPage {
-        
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
-        private global::MapOverlay.ExerciseMap exerciseMap;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private global::Xamarin.Forms.Label TimerLabel;
@@ -47,7 +45,6 @@ namespace Simple_Run_App {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
             global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(Exercise));
-            exerciseMap = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::MapOverlay.ExerciseMap>(this, "exerciseMap");
             TimerLabel = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Label>(this, "TimerLabel");
             TimerCurSpeed = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Label>(this, "TimerCurSpeed");
             TimerDistance = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Label>(this, "TimerDistance");

@@ -280,3 +280,7 @@ H:\Koodia\HIMA\gps\SimpleRunApp-sami\Simple Run App\Simple_Run_App.Android\obj\D
 H:\Koodia\HIMA\gps\SimpleRunApp-sami\Simple Run App\Simple_Run_App.Android\obj\Debug\android\assets\Plugin.Geolocator.dll.mdb
 H:\Koodia\HIMA\gps\SimpleRunApp-sami\Simple Run App\Simple_Run_App.Android\obj\Debug\android\assets\Plugin.Permissions.Abstractions.dll.mdb
 H:\Koodia\HIMA\gps\SimpleRunApp-sami\Simple Run App\Simple_Run_App.Android\obj\Debug\android\assets\Plugin.Permissions.dll.mdb
+H:\Koodia\HIMA\XamarinProjekti\SimpleRunApp\Simple Run App\Simple_Run_App.Android\obj\Debug\Simple_Run_App.Android.csprojResolveAssemblyReference.cache
+H:\Koodia\HIMA\XamarinProjekti\SimpleRunApp\Simple Run App\Simple_Run_App.Android\obj\Debug\Simple_Run_App.Android.csproj.CoreCompileInputs.cache
+H:\Koodia\HIMA\XamarinProjekti\SimpleRunApp\Simple Run App\Simple_Run_App.Android\obj\Debug\Simple_Run_App.Android.dll
+H:\Koodia\HIMA\XamarinProjekti\SimpleRunApp\Simple Run App\Simple_Run_App.Android\obj\Debug\Simple_Run_App.Android.pdb

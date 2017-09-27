@@ -83,3 +83,11 @@ H:\Koodia\HIMA\gps\SimpleRunApp-sami\Simple Run App\Simple_Run_App\bin\Debug\Plu
 H:\Koodia\HIMA\gps\SimpleRunApp-sami\Simple Run App\Simple_Run_App\bin\Debug\Plugin.Geolocator.Abstractions.xml
 H:\Koodia\HIMA\gps\SimpleRunApp-sami\Simple Run App\Simple_Run_App\obj\Debug\Simple_Run_App.csprojResolveAssemblyReference.cache
 H:\Koodia\HIMA\gps\SimpleRunApp-sami\Simple Run App\Simple_Run_App\obj\Debug\Simple_Run_App.MapOverlay.xaml.g.cs
+H:\Koodia\HIMA\XamarinProjekti\SimpleRunApp\Simple Run App\Simple_Run_App\obj\Debug\Simple_Run_App.csprojResolveAssemblyReference.cache
+H:\Koodia\HIMA\XamarinProjekti\SimpleRunApp\Simple Run App\Simple_Run_App\obj\Debug\Simple_Run_App.csproj.CoreCompileInputs.cache
+H:\Koodia\HIMA\XamarinProjekti\SimpleRunApp\Simple Run App\Simple_Run_App\obj\Debug\Simple_Run_App.MainPage.xaml.g.cs
+H:\Koodia\HIMA\XamarinProjekti\SimpleRunApp\Simple Run App\Simple_Run_App\obj\Debug\Simple_Run_App.App.xaml.g.cs
+H:\Koodia\HIMA\XamarinProjekti\SimpleRunApp\Simple Run App\Simple_Run_App\obj\Debug\Simple_Run_App.HistoryPage.xaml.g.cs
+H:\Koodia\HIMA\XamarinProjekti\SimpleRunApp\Simple Run App\Simple_Run_App\obj\Debug\Simple_Run_App.Exercise.xaml.g.cs
+H:\Koodia\HIMA\XamarinProjekti\SimpleRunApp\Simple Run App\Simple_Run_App\obj\Debug\Simple_Run_App.dll
+H:\Koodia\HIMA\XamarinProjekti\SimpleRunApp\Simple Run App\Simple_Run_App\obj\Debug\Simple_Run_App.pdb
