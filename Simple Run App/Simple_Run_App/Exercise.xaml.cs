@@ -74,5 +74,10 @@ namespace Simple_Run_App
             StartBtn.IsVisible = true;
             EndBtn.IsEnabled = true;
         }
+
+        private void drawButton_Clicked(object sender, EventArgs e)
+        {
+
+        }
     }
 }
