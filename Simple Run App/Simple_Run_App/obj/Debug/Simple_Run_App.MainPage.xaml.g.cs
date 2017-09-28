@@ -11,7 +11,8 @@
 namespace Simple_Run_App {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("H:\\Koodia\\HIMA\\gps\\SimpleRunApp-sami\\Simple Run App\\Simple_Run_App\\MainPage.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("G:\\Downloads\\Git\\repositories\\new\\SimpleRunApp\\Simple Run App\\Simple_Run_App\\Main" +
+        "Page.xaml")]
     public partial class MainPage : global::Xamarin.Forms.TabbedPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]

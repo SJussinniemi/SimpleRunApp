@@ -6,4 +6,5 @@
 
     <local:Exercise />
     <local:HistoryPage />
+    <local:ExerciseMapCS/>
 </TabbedPage>

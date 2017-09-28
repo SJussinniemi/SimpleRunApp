@@ -32,8 +32,7 @@ namespace Simple_Run_App
             double HAMKLongitude = 24.475909600000023;
             var position = new Position(HAMKLatitude, HAMKLongitude);
 
-            exerciseMap.MoveToRegion(MapSpan.FromCenterAndRadius(new Position(HAMKLatitude, HAMKLongitude), Distance.FromKilometers(0.5)));
-
+            exerciseMap.MoveToRegion(MapSpan.FromCenterAndRadius(new Position(HAMKLatitude, HAMKLongitude), Distance.FromKilometers(0.1)));
             var pin = new Pin
             {
                 Type = PinType.Place,
@@ -48,13 +47,25 @@ namespace Simple_Run_App
         {
             var locator = CrossGeolocator.Current;
             locator.DesiredAccuracy = 50;
-
             var position = await locator.GetPositionAsync(10000);
 
-            CurLocLongitude.Text = position.Longitude.ToString();
-            CurLocLatitude.Text = position.Latitude.ToString(); 
-        
+            double lat = position.Latitude;
+            double lon = position.Longitude;
+            var MyPosition = new Position(lat, lon);
 
+            CurLocLongitude.Text = lon.ToString();
+            CurLocLatitude.Text = lat.ToString();
+
+            exerciseMap.MoveToRegion(MapSpan.FromCenterAndRadius(new Position(lat,lon), Distance.FromKilometers(0.1)));
+
+            var pin = new Pin
+            {
+                Type = PinType.Place,
+                Position = MyPosition,
+                Label = "test"
+            };
+
+            exerciseMap.Pins.Add(pin);
         }
 
         private void onPause(object sender, EventArgs e)

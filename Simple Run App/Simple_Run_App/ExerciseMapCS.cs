@@ -10,15 +10,17 @@ namespace Simple_Run_App
 {
     public class ExerciseMapCS : ContentPage
     {
-        public MapPageCS()
+        public ExerciseMapCS()
         {
             var customMap = new ExerciseMap
             {
                 MapType = MapType.Street,
-                WidthRequest = App.ScreenWidth,
-                HeightRequest = App.ScreenHeight
+                WidthRequest = 320,
+                HeightRequest = 200
             };
-        Content = customMap;
+            var stack = new StackLayout { Spacing = 0 };
+            stack.Children.Add(customMap);
+            Content = customMap;
         }
     }
 }
