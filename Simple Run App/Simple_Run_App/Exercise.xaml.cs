@@ -17,10 +17,18 @@ namespace Simple_Run_App
         public Exercise()
         {
             InitializeComponent();
-            
-            
+
+            exerciseMap.RouteCoordinates.Add(new Position(60.977594, 24.476400));
+            exerciseMap.RouteCoordinates.Add(new Position(60.976042, 24.475240));
+            exerciseMap.RouteCoordinates.Add(new Position(60.976271, 24.477826));
+            exerciseMap.RouteCoordinates.Add(new Position(60.977594, 24.476400));
+
+
         }
-       
+
+        double HAMKLatitude = 60.9769334;
+        double HAMKLongitude = 24.475909600000023;
+
         private void StartBtn_Clicked(object sender, EventArgs e)
         {
 
@@ -28,8 +36,8 @@ namespace Simple_Run_App
             StartBtn.IsVisible = false;
             EndBtn.IsEnabled = false;
 
-            double HAMKLatitude = 60.9769334;
-            double HAMKLongitude = 24.475909600000023;
+            
+            
             var position = new Position(HAMKLatitude, HAMKLongitude);
 
             exerciseMap.MoveToRegion(MapSpan.FromCenterAndRadius(new Position(HAMKLatitude, HAMKLongitude), Distance.FromKilometers(0.1)));
@@ -77,7 +85,7 @@ namespace Simple_Run_App
 
         private void drawButton_Clicked(object sender, EventArgs e)
         {
-
+            exerciseMap.MoveToRegion(MapSpan.FromCenterAndRadius(new Position(HAMKLatitude, HAMKLongitude), Distance.FromKilometers(0.1)));
         }
     }
 }

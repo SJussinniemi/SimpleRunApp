@@ -58,6 +58,7 @@
 
             <Button x:Name="drawButton"
                 Text="Draw Test Route"
+                    Clicked="drawButton_Clicked"
                 />
 
         </StackLayout>

@@ -40,6 +40,8 @@ namespace MapOverlay.Droid
                 var polylineOptions = new PolylineOptions();
                 polylineOptions.InvokeColor(0x66FF0000);
 
+                var coordinates = ((ExerciseMap)Element).RouteCoordinates;
+
                 foreach (var position in routeCoordinates)
                 {
                     polylineOptions.Add(new LatLng(position.Latitude, position.Longitude));

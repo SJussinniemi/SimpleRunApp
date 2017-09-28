@@ -9,5 +9,6 @@ namespace Simple_Run_App
     public interface MoveData
     {
         string MoveString();
+
     }
 }
