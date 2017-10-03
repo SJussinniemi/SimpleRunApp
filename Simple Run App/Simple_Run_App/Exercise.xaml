@@ -12,6 +12,7 @@
                 x:Name="exerciseMap"
                 WidthRequest="320"
                 HeightRequest="200"
+                IsShowingUser="True"
                 />
 
             <Label x:Name="TimerLabel"
@@ -54,6 +55,10 @@
 
         <Label x:Name="CurLocLongitude"
                Text="cur location longitude"
+               />
+            
+        <Label x:Name="Ticktimes"
+               Text="Device Timer ticks :"
                />
 
             <Button x:Name="drawButton"

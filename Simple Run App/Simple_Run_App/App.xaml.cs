@@ -21,6 +21,8 @@ namespace Simple_Run_App
         protected override void OnStart()
         {
             // Handle when your app starts
+            Exercise exercise = new Exercise();
+            exercise.GetCurrentLocationAsync();
         }
 
         protected override void OnSleep()
@@ -32,5 +34,6 @@ namespace Simple_Run_App
         {
             // Handle when your app resumes
         }
+
     }
 }

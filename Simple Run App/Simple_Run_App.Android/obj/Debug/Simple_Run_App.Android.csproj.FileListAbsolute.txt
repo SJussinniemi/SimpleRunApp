@@ -317,7 +317,6 @@ G:\Downloads\Git\repositories\new\SimpleRunApp\Simple Run App\Simple_Run_App.And
 G:\Downloads\Git\repositories\new\SimpleRunApp\Simple Run App\Simple_Run_App.Android\bin\Debug\Xamarin.GooglePlayServices.Basement.dll
 G:\Downloads\Git\repositories\new\SimpleRunApp\Simple Run App\Simple_Run_App.Android\bin\Debug\Xamarin.GooglePlayServices.Maps.dll
 G:\Downloads\Git\repositories\new\SimpleRunApp\Simple Run App\Simple_Run_App.Android\bin\Debug\Simple_Run_App.pdb
-G:\Downloads\Git\repositories\new\SimpleRunApp\Simple Run App\Simple_Run_App.Android\bin\Debug\Simple_Run_App.dll.mdb
 G:\Downloads\Git\repositories\new\SimpleRunApp\Simple Run App\Simple_Run_App.Android\bin\Debug\FormsViewGroup.pdb
 G:\Downloads\Git\repositories\new\SimpleRunApp\Simple Run App\Simple_Run_App.Android\bin\Debug\FormsViewGroup.dll.mdb
 G:\Downloads\Git\repositories\new\SimpleRunApp\Simple Run App\Simple_Run_App.Android\bin\Debug\Plugin.CurrentActivity.xml
@@ -352,6 +351,7 @@ G:\Downloads\Git\repositories\new\SimpleRunApp\Simple Run App\Simple_Run_App.And
 G:\Downloads\Git\repositories\new\SimpleRunApp\Simple Run App\Simple_Run_App.Android\obj\Debug\res\values\styles.xml
 G:\Downloads\Git\repositories\new\SimpleRunApp\Simple Run App\Simple_Run_App.Android\obj\Debug\R.cs.flag
 G:\Downloads\Git\repositories\new\SimpleRunApp\Simple Run App\Simple_Run_App.Android\obj\Debug\uploadflags.txt
+G:\Downloads\Git\repositories\new\SimpleRunApp\Simple Run App\Simple_Run_App.Android\bin\Debug\Simple_Run_App.dll.mdb
 G:\Downloads\Git\repositories\new\SimpleRunApp\Simple Run App\Simple_Run_App.Android\bin\Debug\Simple_Run_App.Android.dll.mdb
 G:\Downloads\Git\repositories\new\SimpleRunApp\Simple Run App\Simple_Run_App.Android\obj\Debug\android\assets\FormsViewGroup.dll.mdb
 G:\Downloads\Git\repositories\new\SimpleRunApp\Simple Run App\Simple_Run_App.Android\obj\Debug\android\assets\Plugin.Geolocator.Abstractions.dll.mdb
