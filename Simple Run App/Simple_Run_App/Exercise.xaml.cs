@@ -35,6 +35,8 @@ namespace Simple_Run_App
         private void StartBtn_Clicked(object sender, EventArgs e)
         {
 
+            GetCurrentLocationAsync();
+
             PauseBtn.IsVisible = true;
             StartBtn.IsVisible = false;
             EndBtn.IsEnabled = false;
@@ -50,20 +52,17 @@ namespace Simple_Run_App
 
             exerciseMap.Pins.Add(pin);
 
-            Device.StartTimer(TimeSpan.FromSeconds(3), () => {
+            Device.StartTimer(TimeSpan.FromSeconds(4), () => {
 
                 GetCurrentLocationAsync();
                 exerciseMap.RouteCoordinates.Add(new Position(lat, lon));
                 Ticktimes.Text = "Device Timer ticks :" + i.ToString();
                 i++;
+                exerciseMap.MoveToRegion(MapSpan.FromCenterAndRadius(new Position(lat, lon), Distance.FromKilometers(0.1)));
                 return true;
 
             });
 
-            if(lat != 0 && lon != 0)
-            {
-                exerciseMap.MoveToRegion(MapSpan.FromCenterAndRadius(new Position(lat, lon), Distance.FromKilometers(0.05)));
-            }
             
 
         }
@@ -85,6 +84,7 @@ namespace Simple_Run_App
         {
             exerciseMap.MoveToRegion(MapSpan.FromCenterAndRadius(new Position(HAMKLatitude, HAMKLongitude), Distance.FromKilometers(0.1)));
         }
+
 
         public async void GetCurrentLocationAsync()
         {

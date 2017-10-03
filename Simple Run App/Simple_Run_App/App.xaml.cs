@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-
+using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -23,6 +23,7 @@ namespace Simple_Run_App
             // Handle when your app starts
             Exercise exercise = new Exercise();
             exercise.GetCurrentLocationAsync();
+            
         }
 
         protected override void OnSleep()

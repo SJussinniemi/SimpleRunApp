@@ -116,3 +116,4 @@ G:\Downloads\Git\repositories\new\SimpleRunApp\Simple Run App\Simple_Run_App\bin
 G:\Downloads\Git\repositories\new\SimpleRunApp\Simple Run App\Simple_Run_App\bin\Debug\Xamarin.Forms.Platform.pdb
 G:\Downloads\Git\repositories\new\SimpleRunApp\Simple Run App\Simple_Run_App\bin\Debug\Xamarin.Forms.Xaml.pdb
 G:\Downloads\Git\repositories\new\SimpleRunApp\Simple Run App\Simple_Run_App\bin\Debug\Xamarin.Forms.Xaml.xml
+G:\Downloads\Git\repositories\new\SimpleRunApp\Simple Run App\Simple_Run_App\obj\Debug\Simple_Run_App.csprojResolveAssemblyReference.cache
