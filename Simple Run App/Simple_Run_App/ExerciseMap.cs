@@ -13,8 +13,6 @@ namespace Simple_Run_App
         public static readonly BindableProperty RouteCoordinatesProperty =
         BindableProperty.Create(nameof(RouteCoordinates), typeof(List<Position>), typeof(ExerciseMap), new List<Position>(), BindingMode.TwoWay);
 
-
-
         public List<Position> RouteCoordinates
         {
             get { return (List<Position>)GetValue(RouteCoordinatesProperty); }

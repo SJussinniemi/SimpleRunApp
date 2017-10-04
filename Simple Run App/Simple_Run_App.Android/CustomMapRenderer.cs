@@ -13,10 +13,8 @@ namespace MapOverlay.Droid
 {
     public class CustomMapRenderer : MapRenderer, IOnMapReadyCallback
     {
-        //Map map;
         Polyline polyline;
-        bool isDrawn;
-
+        
         protected override void OnElementChanged(Xamarin.Forms.Platform.Android.ElementChangedEventArgs<Map> e)
         {
             base.OnElementChanged(e);
@@ -38,7 +36,7 @@ namespace MapOverlay.Droid
             if (this.Element == null || this.Control == null)
                 return;
 
-            if ((e.PropertyName == "RouteCoordinates" || e.PropertyName == "VisibleRegion") && !isDrawn)
+            if (e.PropertyName == "RouteCoordinates" || e.PropertyName == "VisibleRegion")
             {
                 UpdatePolyLine();
             }

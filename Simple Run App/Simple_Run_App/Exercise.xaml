@@ -30,24 +30,31 @@
                FontSize="Medium"
                />
 
-            <Button x:Name="StartBtn" Clicked="StartBtn_Clicked"
+            <Button x:Name="StartBtn" 
+                Clicked="StartBtn_Clicked"
                 Text="Start Running"
                 
                 />
 
-            <Button x:Name="PauseBtn" IsVisible="False"
-                Clicked="onPause"
+            <Button x:Name="PauseBtn" 
+                IsVisible="False"
+                Clicked="onPause_Clicked"
                 Text="Pause"
                 />
+            
+            <Button x:Name="ResumeBtn"
+                IsVisible="False"
+                Text="Resume"
+                Clicked="ResumeBtn_Clicked"
+                />
 
-            <Button x:Name="EndBtn" IsEnabled="False"
+            <Button x:Name="EndBtn" 
+                IsEnabled="False"
                 Text="End"
+                Clicked="EndBtn_ClickedAsync"    
                 />
 
-            <Button x:Name="CurLocBtn"
-                Text="My location"
-                Clicked="CurLocBtn_Clicked"
-                />
+
 
         <Label x:Name="CurLocLatitude"
                Text="cur location latitude"

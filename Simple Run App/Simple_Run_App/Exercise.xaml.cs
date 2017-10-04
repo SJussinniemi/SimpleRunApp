@@ -17,17 +17,16 @@ namespace Simple_Run_App
         public Exercise()
         {
             InitializeComponent();
-            exerciseMap.RouteCoordinates.Add(new Position(60.977594, 24.476400));
-            exerciseMap.RouteCoordinates.Add(new Position(60.976042, 24.475240));
-            exerciseMap.RouteCoordinates.Add(new Position(60.976271, 24.477826));
-            exerciseMap.RouteCoordinates.Add(new Position(60.977594, 24.476400));
 
             Device.BeginInvokeOnMainThread(() =>
             {
-
                 exerciseMap.RouteCoordinates = new List<Position>
                 {
-
+                    // Hard coded triangle for test use atm
+                    //new Position(60.977594, 24.476400),
+                    //new Position(60.976042, 24.475240),
+                    //new Position(60.976271, 24.477826),
+                    //new Position(60.977594, 24.476400)
                 };
             });
 
@@ -35,62 +34,34 @@ namespace Simple_Run_App
 
         double HAMKLatitude = 60.9769334;
         double HAMKLongitude = 24.475909600000023;
-        double lat;
-        double lon;
-        int i = 0;
-
+        double lat; // Location latitude
+        double lon; // Location longitude
+        Boolean IsRunning; // For Device timer handling
+        
+        int i = 0; // For develop purposes. Tracks How Many times Device.StartTimer has looped.
+        
 
         private void StartBtn_Clicked(object sender, EventArgs e)
         {
-
+            // Get starting position WOIP perhaps Loading screen later.
             GetCurrentLocationAsync();
 
             PauseBtn.IsVisible = true;
             StartBtn.IsVisible = false;
-            EndBtn.IsEnabled = false;
-
-            var MyPosition = new Position(lat, lon);
-
-            var pin = new Pin
-            {
-                Type = PinType.Place,
-                Position = MyPosition,
-                Label = "test"
-            };
-
-            exerciseMap.Pins.Add(pin);
-
-            Device.StartTimer(TimeSpan.FromSeconds(5), () => {
-
-                GetCurrentLocationAsync();
-
-                var list = new List<Position>(exerciseMap.RouteCoordinates);
-                list.Add(new Position(lat, lon));
-                exerciseMap.RouteCoordinates = list;
-
-                Ticktimes.Text = "Device Timer ticks :" + i.ToString();
-                i++;
-                
-                exerciseMap.MoveToRegion(MapSpan.FromCenterAndRadius(new Position(lat, lon), Distance.FromKilometers(0.1)));
-                return true;
-
-            });
-
-            
-
-        }
-
-        private void CurLocBtn_Clicked(object sender, EventArgs e)
-        {
+            EndBtn.IsEnabled = true;
+            IsRunning = true;
+            StartRunning();
 
 
         }
 
-        private void onPause(object sender, EventArgs e)
+        private void onPause_Clicked(object sender, EventArgs e)
         {
             PauseBtn.IsVisible = false;
-            StartBtn.IsVisible = true;
+            ResumeBtn.IsVisible = true;
             EndBtn.IsEnabled = true;
+
+            IsRunning = false;
         }
 
         private void drawButton_Clicked(object sender, EventArgs e)
@@ -117,6 +88,49 @@ namespace Simple_Run_App
                 CurLocLatitude.Text = ex.ToString();
             }
             
+        }
+
+        private async void EndBtn_ClickedAsync(object sender, EventArgs e)
+        {
+            StartBtn.IsVisible = true;
+            PauseBtn.IsVisible = false;
+            ResumeBtn.IsVisible = false;
+            EndBtn.IsEnabled = false;
+
+            IsRunning = false;
+            CurLocLatitude.Text = "End Button pressed";
+            i = 0;
+            var answer = await DisplayAlert("Great Run!", "Would you like to save it to history?", "Yes", "No");
+            CurLocLongitude.Text = answer.ToString();
+
+        }
+
+        private void ResumeBtn_Clicked(object sender, EventArgs e)
+        {
+            PauseBtn.IsVisible = true;
+            ResumeBtn.IsVisible = false;
+
+            IsRunning = true;
+            StartRunning();
+        }
+
+        public void StartRunning()
+        {
+            Device.StartTimer(TimeSpan.FromSeconds(5), () => {
+
+                GetCurrentLocationAsync();
+
+                var list = new List<Position>(exerciseMap.RouteCoordinates);
+                list.Add(new Position(lat, lon));
+                exerciseMap.RouteCoordinates = list;
+
+                Ticktimes.Text = "Device Timer ticks :" + i.ToString();
+                i++;
+
+                exerciseMap.MoveToRegion(MapSpan.FromCenterAndRadius(new Position(lat, lon), Distance.FromKilometers(0.1)));
+                return IsRunning;
+
+            });
         }
     }
 }
