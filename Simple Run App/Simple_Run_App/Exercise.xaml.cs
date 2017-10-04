@@ -17,11 +17,19 @@ namespace Simple_Run_App
         public Exercise()
         {
             InitializeComponent();
+            exerciseMap.RouteCoordinates.Add(new Position(60.977594, 24.476400));
+            exerciseMap.RouteCoordinates.Add(new Position(60.976042, 24.475240));
+            exerciseMap.RouteCoordinates.Add(new Position(60.976271, 24.477826));
+            exerciseMap.RouteCoordinates.Add(new Position(60.977594, 24.476400));
 
-            //exerciseMap.RouteCoordinates.Add(new Position(60.977594, 24.476400));
-            //exerciseMap.RouteCoordinates.Add(new Position(60.976042, 24.475240));
-            //exerciseMap.RouteCoordinates.Add(new Position(60.976271, 24.477826));
-            //exerciseMap.RouteCoordinates.Add(new Position(60.977594, 24.476400));
+            Device.BeginInvokeOnMainThread(() =>
+            {
+
+                exerciseMap.RouteCoordinates = new List<Position>
+                {
+
+                };
+            });
 
         }
 
@@ -52,12 +60,17 @@ namespace Simple_Run_App
 
             exerciseMap.Pins.Add(pin);
 
-            Device.StartTimer(TimeSpan.FromSeconds(4), () => {
+            Device.StartTimer(TimeSpan.FromSeconds(5), () => {
 
                 GetCurrentLocationAsync();
-                exerciseMap.RouteCoordinates.Add(new Position(lat, lon));
+
+                var list = new List<Position>(exerciseMap.RouteCoordinates);
+                list.Add(new Position(lat, lon));
+                exerciseMap.RouteCoordinates = list;
+
                 Ticktimes.Text = "Device Timer ticks :" + i.ToString();
                 i++;
+                
                 exerciseMap.MoveToRegion(MapSpan.FromCenterAndRadius(new Position(lat, lon), Distance.FromKilometers(0.1)));
                 return true;
 
@@ -88,14 +101,22 @@ namespace Simple_Run_App
 
         public async void GetCurrentLocationAsync()
         {
-            var locator = CrossGeolocator.Current;
-            locator.DesiredAccuracy = 50;
-            var position = await locator.GetPositionAsync(10000);
+            try
+            {
+                var locator = CrossGeolocator.Current;
+                locator.DesiredAccuracy = 50;
+                var position = await locator.GetPositionAsync(10000);
 
-            lat = position.Latitude;
-            lon = position.Longitude;
-            CurLocLongitude.Text = lon.ToString();
-            CurLocLatitude.Text = lat.ToString();
+                lat = position.Latitude;
+                lon = position.Longitude;
+                CurLocLongitude.Text = lon.ToString();
+                CurLocLatitude.Text = lat.ToString();
+            }
+            catch(Exception ex)
+            {
+                CurLocLatitude.Text = ex.ToString();
+            }
+            
         }
     }
 }
