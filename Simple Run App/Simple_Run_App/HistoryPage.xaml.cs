@@ -12,9 +12,14 @@ namespace Simple_Run_App
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class HistoryPage : ContentPage
     {
+       
         public HistoryPage()
         {
             InitializeComponent();
         }
+        ListView listView = new ListView
+        {
+           
+        };
     }
 }

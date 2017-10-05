@@ -3,31 +3,38 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Simple_Run_App.Exercise"
              Title="Excercise">
+    <ScrollView>
+        <StackLayout>
+            <Label x:Name="TimerLabel"
+                   Text="Timer Label"
+                   FontSize="Medium"
+                   />
 
-    <StackLayout>
-        <Label x:Name="TimerLabel"
-               Text="Timer Label"
-               FontSize="Medium"
-               />
+            <Label x:Name="TimerCurSpeed"
+                   Text="CurrentSpeed Label"
+                   FontSize="Medium"
+                   />
 
-        <Label x:Name="TimerCurSpeed"
-               Text="CurrentSpeed Label"
-               FontSize="Medium"
-               />
+            <Label x:Name="TimerDistance"
+                   Text="Distance Label"
+                   FontSize="Medium"
+                   />
 
-        <Label x:Name="TimerDistance"
-               Text="Distance Label"
-               FontSize="Medium"
-               />
+            <Button x:Name="StartBtn"
+                    Text="Start Running"
+                    Clicked="StartBtn_Clicked"
+                    />
 
-        <Button x:Name="StartBtn"
-                Text="Start Running"
-                Clicked="StartBtn_Clicked"
-                />
+            <Button x:Name="PauseBtn"
+                    IsVisible="False"
+                    Text="pause"
+                    Clicked="onPause"
+                    />
 
-        <Button x:Name="EndBtn"
-                Text="End"
-                Clicked="End_Button"
-                />
-    </StackLayout>
+            <Button x:Name="EndBtn"
+                    Text="End"
+                    Clicked="End_Button"
+                    />
+        </StackLayout>
+    </ScrollView>
 </ContentPage>

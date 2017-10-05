@@ -3,4 +3,9 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Simple_Run_App.HistoryPage"
              Title="History">
+    <StackLayout>
+        <Label x:Name="HistoryLabel"
+               Text="History page"
+               FontSize="Medium"/>
+    </StackLayout>
 </ContentPage>
