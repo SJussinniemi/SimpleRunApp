@@ -18,6 +18,20 @@ namespace Simple_Run_App
             MainPage = new Simple_Run_App.MainPage();
         }
 
+        static SimpleRunAppDB database;
+
+        public static SimpleRunAppDB Database
+        {
+            get
+            {
+                if (database == null)
+                {
+                    database = new SimpleRunAppDB(DependencyService.Get<IFileHelper>().GetLocalFilePath("TodoSQLite.db3"));
+                }
+                return database;
+            }
+        }
+
         protected override void OnStart()
         {
             // Handle when your app starts

@@ -5,6 +5,11 @@
     <ResolvedResourceDirectory>G:\Downloads\Git\repositories\new\SimpleRunApp\Simple Run App\Simple_Run_App.Android\obj\Debug\__library_projects__\Plugin.CurrentActivity\library_project_imports\res</ResolvedResourceDirectory>
     <ResolvedResourceDirectory>G:\Downloads\Git\repositories\new\SimpleRunApp\Simple Run App\Simple_Run_App.Android\obj\Debug\__library_projects__\Plugin.Geolocator\library_project_imports\res</ResolvedResourceDirectory>
     <ResolvedResourceDirectory>G:\Downloads\Git\repositories\new\SimpleRunApp\Simple Run App\Simple_Run_App.Android\obj\Debug\__library_projects__\Plugin.Permissions\library_project_imports\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>G:\Downloads\Git\repositories\new\SimpleRunApp\Simple Run App\Simple_Run_App.Android\obj\Debug\__library_projects__\SQLitePCLRaw.batteries_green\library_project_imports\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>G:\Downloads\Git\repositories\new\SimpleRunApp\Simple Run App\Simple_Run_App.Android\obj\Debug\__library_projects__\SQLitePCLRaw.batteries_v2\library_project_imports\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>G:\Downloads\Git\repositories\new\SimpleRunApp\Simple Run App\Simple_Run_App.Android\obj\Debug\__library_projects__\SQLitePCLRaw.core\library_project_imports\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>G:\Downloads\Git\repositories\new\SimpleRunApp\Simple Run App\Simple_Run_App.Android\obj\Debug\__library_projects__\SQLitePCLRaw.lib.e_sqlite3\library_project_imports\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>G:\Downloads\Git\repositories\new\SimpleRunApp\Simple Run App\Simple_Run_App.Android\obj\Debug\__library_projects__\SQLitePCLRaw.provider.e_sqlite3\library_project_imports\res</ResolvedResourceDirectory>
     <ResolvedResourceDirectory>G:\Downloads\Git\repositories\new\SimpleRunApp\Simple Run App\Simple_Run_App.Android\obj\Debug\__library_projects__\Xamarin.Forms.Maps.Android\library_project_imports\res</ResolvedResourceDirectory>
     <ResolvedResourceDirectory>G:\Downloads\Git\repositories\new\SimpleRunApp\Simple Run App\Simple_Run_App.Android\obj\Debug\__library_projects__\Xamarin.Forms.Platform.Android\library_project_imports\res</ResolvedResourceDirectory>
     <ResolvedResourceDirectory>G:\Downloads\Git\repositories\new\SimpleRunApp\Simple Run App\Simple_Run_App.Android\obj\Debug\__library_projects__\Xamarin.Forms.Platform\library_project_imports\res</ResolvedResourceDirectory>
@@ -13,6 +18,11 @@
     <ResolvedAssetDirectory>obj\Debug\__library_projects__\Plugin.CurrentActivity\library_project_imports\assets</ResolvedAssetDirectory>
     <ResolvedAssetDirectory>obj\Debug\__library_projects__\Plugin.Geolocator\library_project_imports\assets</ResolvedAssetDirectory>
     <ResolvedAssetDirectory>obj\Debug\__library_projects__\Plugin.Permissions\library_project_imports\assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>obj\Debug\__library_projects__\SQLitePCLRaw.batteries_green\library_project_imports\assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>obj\Debug\__library_projects__\SQLitePCLRaw.batteries_v2\library_project_imports\assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>obj\Debug\__library_projects__\SQLitePCLRaw.core\library_project_imports\assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>obj\Debug\__library_projects__\SQLitePCLRaw.lib.e_sqlite3\library_project_imports\assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>obj\Debug\__library_projects__\SQLitePCLRaw.provider.e_sqlite3\library_project_imports\assets</ResolvedAssetDirectory>
     <ResolvedAssetDirectory>obj\Debug\__library_projects__\Xamarin.Forms.Maps.Android\library_project_imports\assets</ResolvedAssetDirectory>
     <ResolvedAssetDirectory>obj\Debug\__library_projects__\Xamarin.Forms.Platform.Android\library_project_imports\assets</ResolvedAssetDirectory>
     <ResolvedAssetDirectory>obj\Debug\__library_projects__\Xamarin.Forms.Platform\library_project_imports\assets</ResolvedAssetDirectory>
@@ -22,6 +32,11 @@
     <ResolvedResourceDirectoryStamp>G:\Downloads\Git\repositories\new\SimpleRunApp\Simple Run App\Simple_Run_App.Android\obj\Debug\__library_projects__\Plugin.CurrentActivity.stamp</ResolvedResourceDirectoryStamp>
     <ResolvedResourceDirectoryStamp>G:\Downloads\Git\repositories\new\SimpleRunApp\Simple Run App\Simple_Run_App.Android\obj\Debug\__library_projects__\Plugin.Geolocator.stamp</ResolvedResourceDirectoryStamp>
     <ResolvedResourceDirectoryStamp>G:\Downloads\Git\repositories\new\SimpleRunApp\Simple Run App\Simple_Run_App.Android\obj\Debug\__library_projects__\Plugin.Permissions.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>G:\Downloads\Git\repositories\new\SimpleRunApp\Simple Run App\Simple_Run_App.Android\obj\Debug\__library_projects__\SQLitePCLRaw.batteries_green.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>G:\Downloads\Git\repositories\new\SimpleRunApp\Simple Run App\Simple_Run_App.Android\obj\Debug\__library_projects__\SQLitePCLRaw.batteries_v2.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>G:\Downloads\Git\repositories\new\SimpleRunApp\Simple Run App\Simple_Run_App.Android\obj\Debug\__library_projects__\SQLitePCLRaw.core.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>G:\Downloads\Git\repositories\new\SimpleRunApp\Simple Run App\Simple_Run_App.Android\obj\Debug\__library_projects__\SQLitePCLRaw.lib.e_sqlite3.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>G:\Downloads\Git\repositories\new\SimpleRunApp\Simple Run App\Simple_Run_App.Android\obj\Debug\__library_projects__\SQLitePCLRaw.provider.e_sqlite3.stamp</ResolvedResourceDirectoryStamp>
     <ResolvedResourceDirectoryStamp>G:\Downloads\Git\repositories\new\SimpleRunApp\Simple Run App\Simple_Run_App.Android\obj\Debug\__library_projects__\Xamarin.Forms.Maps.Android.stamp</ResolvedResourceDirectoryStamp>
     <ResolvedResourceDirectoryStamp>G:\Downloads\Git\repositories\new\SimpleRunApp\Simple Run App\Simple_Run_App.Android\obj\Debug\__library_projects__\Xamarin.Forms.Platform.Android.stamp</ResolvedResourceDirectoryStamp>
     <ResolvedResourceDirectoryStamp>G:\Downloads\Git\repositories\new\SimpleRunApp\Simple Run App\Simple_Run_App.Android\obj\Debug\__library_projects__\Xamarin.Forms.Platform.stamp</ResolvedResourceDirectoryStamp>

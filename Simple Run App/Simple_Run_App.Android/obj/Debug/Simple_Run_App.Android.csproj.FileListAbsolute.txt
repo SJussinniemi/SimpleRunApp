@@ -363,3 +363,11 @@ G:\Downloads\Git\repositories\new\SimpleRunApp\Simple Run App\Simple_Run_App.And
 G:\Downloads\Git\repositories\new\SimpleRunApp\Simple Run App\Simple_Run_App.Android\obj\Debug\android\assets\Xamarin.Forms.Core.dll.mdb
 G:\Downloads\Git\repositories\new\SimpleRunApp\Simple Run App\Simple_Run_App.Android\obj\Debug\android\assets\Xamarin.Forms.Platform.Android.dll.mdb
 G:\Downloads\Git\repositories\new\SimpleRunApp\Simple Run App\Simple_Run_App.Android\obj\Debug\android\assets\Xamarin.Forms.Xaml.dll.mdb
+G:\Downloads\Git\repositories\new\SimpleRunApp\Simple Run App\Simple_Run_App.Android\bin\Debug\SQLite-net.dll
+G:\Downloads\Git\repositories\new\SimpleRunApp\Simple Run App\Simple_Run_App.Android\bin\Debug\SQLitePCLRaw.batteries_green.dll
+G:\Downloads\Git\repositories\new\SimpleRunApp\Simple Run App\Simple_Run_App.Android\bin\Debug\SQLitePCLRaw.batteries_v2.dll
+G:\Downloads\Git\repositories\new\SimpleRunApp\Simple Run App\Simple_Run_App.Android\bin\Debug\SQLitePCLRaw.core.dll
+G:\Downloads\Git\repositories\new\SimpleRunApp\Simple Run App\Simple_Run_App.Android\bin\Debug\SQLitePCLRaw.lib.e_sqlite3.dll
+G:\Downloads\Git\repositories\new\SimpleRunApp\Simple Run App\Simple_Run_App.Android\bin\Debug\SQLitePCLRaw.provider.e_sqlite3.dll
+G:\Downloads\Git\repositories\new\SimpleRunApp\Simple Run App\Simple_Run_App.Android\bin\Debug\SQLite-net.pdb
+G:\Downloads\Git\repositories\new\SimpleRunApp\Simple Run App\Simple_Run_App.Android\bin\Debug\SQLite-net.xml
