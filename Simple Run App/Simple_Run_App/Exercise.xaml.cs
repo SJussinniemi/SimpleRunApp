@@ -8,6 +8,7 @@ using Xamarin.Forms.Maps;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using Plugin.Geolocator;
+using SQLite;
 
 namespace Simple_Run_App
 {
@@ -66,7 +67,18 @@ namespace Simple_Run_App
 
         private void drawButton_Clicked(object sender, EventArgs e)
         {
-            exerciseMap.MoveToRegion(MapSpan.FromCenterAndRadius(new Position(HAMKLatitude, HAMKLongitude), Distance.FromKilometers(0.1)));
+            try
+            {
+                string test = DependencyService.Get<IFileHelper>().GetLocalFilePath("SimpleRunAppDB.db3");
+                CurLocLatitude.Text = test;
+                string dbPath = "SimpleRunAppDB.db3";
+                var db = new SQLiteConnection(dbPath);
+            }
+            catch(Exception ex)
+            {
+                CurLocLatitude.Text = ex.ToString();
+            }
+
         }
 
 

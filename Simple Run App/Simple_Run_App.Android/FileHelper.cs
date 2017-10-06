@@ -20,8 +20,11 @@ namespace Simple_Run_App.Droid
     {
         public string GetLocalFilePath(string filename)
         {
+            // /data/user/0/simplerunapp.simplerunapp/files/
             string path = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal);
-            return Path.Combine(path, filename);
+            string dbPath = Path.Combine(path, filename);
+            // /data/user/0/simplerunapp.simplerunapp/files/SimpleRunAppDB.db3
+            return dbPath;
         }
     }
 }

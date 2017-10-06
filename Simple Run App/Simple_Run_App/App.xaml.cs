@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SQLite;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -37,7 +38,7 @@ namespace Simple_Run_App
             // Handle when your app starts
             Exercise exercise = new Exercise();
             exercise.GetCurrentLocationAsync();
-            
+    
         }
 
         protected override void OnSleep()
