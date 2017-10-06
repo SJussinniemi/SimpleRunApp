@@ -11,5 +11,6 @@ namespace Simple_Run_App
     {
         [PrimaryKey, AutoIncrement]
         public int ID { get; set; }
+        public string Test { get; set; }
     }
 }

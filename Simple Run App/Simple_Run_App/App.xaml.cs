@@ -26,7 +26,7 @@ namespace Simple_Run_App
             {
                 if (database == null)
                 {
-                    database = new SimpleRunAppDB(DependencyService.Get<IFileHelper>().GetLocalFilePath("TodoSQLite.db3"));
+                    database = new SimpleRunAppDB(DependencyService.Get<IFileHelper>().GetLocalFilePath("SimpleRunAppDB.db3"));
                 }
                 return database;
             }
