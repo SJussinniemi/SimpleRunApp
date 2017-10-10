@@ -11,6 +11,12 @@ namespace Simple_Run_App
     {
         [PrimaryKey, AutoIncrement]
         public int ID { get; set; }
-        public string Test { get; set; }
+        public DateTime DATETIME { get; set; }
+        [MaxLength(10)]
+        public string DURATION { get; set; }
+        [MaxLength(10)]
+        public string DISTANCE { get; set; }
+        [MaxLength(10)]
+        public string AVGSPEED { get; set; }
     }
 }

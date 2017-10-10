@@ -70,44 +70,35 @@ namespace Simple_Run_App
             try
             {
                 string path = DependencyService.Get<IFileHelper>().GetLocalFilePath("SimpleRunAppDB.db3");
-                CurLocLatitude.Text = path;
-                CreateDataBase();
-                    
+                var db = new SQLiteConnection(path);
+
+                //db.CreateTable<ExerciseTable>();
+
+                if (db.Table<ExerciseTable>().Count() == 0)
+                {
+
+                    var tableItems = new ExerciseTable();
+
+                    tableItems.ID = 1;
+                    tableItems.DURATION = "TestTime";
+                    tableItems.DISTANCE = "10km";
+                    tableItems.AVGSPEED = "Speed";
+                    tableItems.DATETIME = DateTime.Now;
+                    db.InsertOrReplace(tableItems);
+
+                }
+
+                var dbReader = db.Get<ExerciseTable>(1);
+                Ticktimes.Text = dbReader.ID + " Date: " + dbReader.DATETIME + " Dur: " + dbReader.DURATION + " Dist: " + dbReader.DISTANCE + " Speed: " + dbReader.AVGSPEED;
+
+                db.Close();
+
             }
-            catch(Exception ex)
+            catch(SQLiteException ex)
             {
                 CurLocLongitude.Text = ex.ToString();
             }
 
-        }
-
-        private string CreateDataBase()
-        {
-            try
-            {
-                string path = DependencyService.Get<IFileHelper>().GetLocalFilePath("SimpleRunAppDB.db3");
-                var db = new SQLiteConnection(path);
-
-                db.CreateTable<ExerciseTable>();
-                
-                if(db.Table<ExerciseTable>().Count() == 0) 
-                {
-                    var poyta = new ExerciseTable();
-                    poyta.ID = 1;
-                    poyta.Test = "Heres some data";
-                    db.Insert(poyta);
-
-                }
-
-                var dbreader = db.Get<ExerciseTable>(1);
-                Ticktimes.Text = dbreader.Test;
-                db.Close();
-                return CurLocLongitude.Text = "Database Created";
-
-            }catch(Exception ex)
-            {
-                return CurLocLongitude.Text = ex.ToString();
-            }
         }
 
         public async void GetCurrentLocationAsync()

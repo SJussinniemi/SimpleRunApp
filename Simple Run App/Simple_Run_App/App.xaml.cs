@@ -38,7 +38,12 @@ namespace Simple_Run_App
             // Handle when your app starts
             Exercise exercise = new Exercise();
             exercise.GetCurrentLocationAsync();
-    
+
+
+            //Creates Database
+            string path = DependencyService.Get<IFileHelper>().GetLocalFilePath("SimpleRunAppDB.db3");
+            SimpleRunAppDB db = new SimpleRunAppDB(path);
+
         }
 
         protected override void OnSleep()

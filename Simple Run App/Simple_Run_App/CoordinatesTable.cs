@@ -11,5 +11,8 @@ namespace Simple_Run_App
     {
         [PrimaryKey, AutoIncrement]
         public int ID { get; set; }
+        public int INDEX { get; set; }
+        public double LATITUDE { get; set; }
+        public double LONGITUDE { get; set; }
     }
 }
