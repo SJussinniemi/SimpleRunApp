@@ -12,6 +12,7 @@ using Android.Widget;
 using Xamarin.Forms;
 using Simple_Run_App.Droid;
 using System.IO;
+using SQLite;
 
 [assembly: Dependency(typeof(FileHelper))]
 namespace Simple_Run_App.Droid
