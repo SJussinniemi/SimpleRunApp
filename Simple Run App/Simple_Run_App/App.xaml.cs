@@ -21,17 +21,17 @@ namespace Simple_Run_App
 
         public static SimpleRunAppDB database;
 
-        //public static SimpleRunAppDB Database
-        //{
-        //    get
-        //    {
-        //        if (database == null)
-        //        {
-        //            database = new SimpleRunAppDB(DependencyService.Get<IFileHelper>().GetLocalFilePath("SimpleRunAppDB.db3"));
-        //        }
-        //        return database;
-        //    }
-        //}
+        public static SimpleRunAppDB Database
+        {
+            get
+            {
+                if (database == null)
+                {
+                    database = new SimpleRunAppDB(DependencyService.Get<IFileHelper>().GetLocalFilePath("SimpleRunAppDB.db3"));
+                }
+                return database;
+            }
+        }
 
         protected override void OnStart()
         {

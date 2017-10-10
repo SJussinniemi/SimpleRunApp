@@ -69,29 +69,19 @@ namespace Simple_Run_App
 
         private async void drawButton_Clicked(object sender, EventArgs e)
         {
+            var db = App.database;
+
             try
             {
-                
-                var tableItems = new ExerciseTable
-                {
-                    ID = 1,
-                    DURATION = "TestTime",
-                    DISTANCE = "10km",
-                    AVGSPEED = "Speed",
-                    DATETIME = DateTime.Now
-                };
-
-                var db = App.database;
-                await db.SaveItemAsync(tableItems);
-
                 var results = new List<ExerciseTable>();
                 results = await db.GetItemsAsync();
 
-                Ticktimes.Text = results[0].DATETIME.ToString();
-                
+                CurLocLongitude.Text = "Count of rows in list: " + results.Count().ToString();
+
+                Ticktimes.Text = results[0].ID + ": " + results[0].DATETIME.ToString() + " " + results[0].DURATION;
 
             }
-            catch(SQLiteException ex)
+            catch (Exception ex)
             {
                 CurLocLongitude.Text = ex.ToString();
             }
@@ -128,9 +118,31 @@ namespace Simple_Run_App
             IsRunning = false;
             CurLocLatitude.Text = "End Button pressed";
             i = 0;
-            var answer = await DisplayAlert("Great Run!", "Would you like to save it to history?", "Yes", "No");
-            CurLocLongitude.Text = answer.ToString();
 
+            bool answer = await DisplayAlert("Great Run!", "Would you like to save it to history?", "Yes", "No");
+            if (answer)
+            {
+                try
+                {
+                    CurLocLongitude.Text = "juostu";
+                    var db = App.database;
+
+                    var tableItems = new ExerciseTable
+                    {
+                        DURATION = "TestTime",
+                        DISTANCE = "10km",
+                        AVGSPEED = "Speed",
+                        DATETIME = DateTime.Now
+                    };
+
+                    await db.SaveItemAsync(tableItems);
+
+                }
+                catch (SQLiteException ex)
+                {
+                    CurLocLongitude.Text = ex.ToString();
+                }
+            }
         }
 
         private void ResumeBtn_Clicked(object sender, EventArgs e)

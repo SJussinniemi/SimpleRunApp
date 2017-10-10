@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using SQLite;
+using System.Diagnostics;
 
 namespace Simple_Run_App
 {
@@ -16,6 +17,7 @@ namespace Simple_Run_App
             database = new SQLiteAsyncConnection(dbPath);
             database.CreateTableAsync<ExerciseTable>().Wait();
             database.CreateTableAsync<CoordinatesTable>().Wait();
+            Debug.WriteLine("Done");
         }
 
         public Task<List<ExerciseTable>> GetItemsAsync()
@@ -32,7 +34,6 @@ namespace Simple_Run_App
         {
             return database.Table<ExerciseTable>().Where(i => i.ID == id).FirstOrDefaultAsync();
         }
-
 
         public Task<int> SaveItemAsync(ExerciseTable item)
         {
