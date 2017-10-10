@@ -19,19 +19,19 @@ namespace Simple_Run_App
             MainPage = new Simple_Run_App.MainPage();
         }
 
-        static SimpleRunAppDB database;
+        public static SimpleRunAppDB database;
 
-        public static SimpleRunAppDB Database
-        {
-            get
-            {
-                if (database == null)
-                {
-                    database = new SimpleRunAppDB(DependencyService.Get<IFileHelper>().GetLocalFilePath("SimpleRunAppDB.db3"));
-                }
-                return database;
-            }
-        }
+        //public static SimpleRunAppDB Database
+        //{
+        //    get
+        //    {
+        //        if (database == null)
+        //        {
+        //            database = new SimpleRunAppDB(DependencyService.Get<IFileHelper>().GetLocalFilePath("SimpleRunAppDB.db3"));
+        //        }
+        //        return database;
+        //    }
+        //}
 
         protected override void OnStart()
         {
@@ -42,7 +42,8 @@ namespace Simple_Run_App
 
             //Creates Database
             string path = DependencyService.Get<IFileHelper>().GetLocalFilePath("SimpleRunAppDB.db3");
-            SimpleRunAppDB db = new SimpleRunAppDB(path);
+            database = new SimpleRunAppDB(path);
+            
 
         }
 

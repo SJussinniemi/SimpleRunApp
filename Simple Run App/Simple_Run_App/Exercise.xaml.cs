@@ -18,7 +18,7 @@ namespace Simple_Run_App
         public Exercise()
         {
             InitializeComponent();
-
+            
             Device.BeginInvokeOnMainThread(() =>
             {
                 exerciseMap.RouteCoordinates = new List<Position>
@@ -37,7 +37,9 @@ namespace Simple_Run_App
         double HAMKLongitude = 24.475909600000023;
         double lat; // Location latitude
         double lon; // Location longitude
+        
         Boolean IsRunning; // For Device timer handling
+        
         
         int i = 0; // For develop purposes. Tracks How Many times Device.StartTimer has looped.
         
@@ -65,33 +67,28 @@ namespace Simple_Run_App
             IsRunning = false;
         }
 
-        private void drawButton_Clicked(object sender, EventArgs e)
+        private async void drawButton_Clicked(object sender, EventArgs e)
         {
             try
             {
-                string path = DependencyService.Get<IFileHelper>().GetLocalFilePath("SimpleRunAppDB.db3");
-                var db = new SQLiteConnection(path);
-
-                //db.CreateTable<ExerciseTable>();
-
-                if (db.Table<ExerciseTable>().Count() == 0)
+                
+                var tableItems = new ExerciseTable
                 {
+                    ID = 1,
+                    DURATION = "TestTime",
+                    DISTANCE = "10km",
+                    AVGSPEED = "Speed",
+                    DATETIME = DateTime.Now
+                };
 
-                    var tableItems = new ExerciseTable();
+                var db = App.database;
+                await db.SaveItemAsync(tableItems);
 
-                    tableItems.ID = 1;
-                    tableItems.DURATION = "TestTime";
-                    tableItems.DISTANCE = "10km";
-                    tableItems.AVGSPEED = "Speed";
-                    tableItems.DATETIME = DateTime.Now;
-                    db.InsertOrReplace(tableItems);
+                var results = new List<ExerciseTable>();
+                results = await db.GetItemsAsync();
 
-                }
-
-                var dbReader = db.Get<ExerciseTable>(1);
-                Ticktimes.Text = dbReader.ID + " Date: " + dbReader.DATETIME + " Dur: " + dbReader.DURATION + " Dist: " + dbReader.DISTANCE + " Speed: " + dbReader.AVGSPEED;
-
-                db.Close();
+                Ticktimes.Text = results[0].DATETIME.ToString();
+                
 
             }
             catch(SQLiteException ex)

@@ -33,6 +33,7 @@ namespace Simple_Run_App
             return database.Table<ExerciseTable>().Where(i => i.ID == id).FirstOrDefaultAsync();
         }
 
+
         public Task<int> SaveItemAsync(ExerciseTable item)
         {
             if (item.ID != 0)
