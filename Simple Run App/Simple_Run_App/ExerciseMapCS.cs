@@ -10,6 +10,8 @@ namespace Simple_Run_App
 {
     public class ExerciseMapCS : ContentPage
     {
+        // Possible use for later when reviewing exercise history.
+
         public ExerciseMapCS()
         {
             var customMap = new ExerciseMap

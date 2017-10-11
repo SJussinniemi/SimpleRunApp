@@ -33,14 +33,9 @@ namespace Simple_Run_App
 
         }
 
-        double HAMKLatitude = 60.9769334;
-        double HAMKLongitude = 24.475909600000023;
         double lat; // Location latitude
-        double lon; // Location longitude
-        
+        double lon; // Location longitude        
         Boolean IsRunning; // For Device timer handling
-        
-        
         int i = 0; // For develop purposes. Tracks How Many times Device.StartTimer has looped.
         
 
@@ -54,7 +49,6 @@ namespace Simple_Run_App
             EndBtn.IsEnabled = true;
             IsRunning = true;
             StartRunning();
-
 
         }
 
@@ -85,7 +79,6 @@ namespace Simple_Run_App
             {
                 CurLocLongitude.Text = ex.ToString();
             }
-
         }
 
         public async void GetCurrentLocationAsync()

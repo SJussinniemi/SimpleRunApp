@@ -1,7 +1,3 @@
-Simple_Run_App.Droid.LocationHandler, Simple_Run_App.Android;md5dec82588a2de708aa6225e0914ceea18.LocationHandler
-Simple_Run_App.Droid.LocationHandler, Simple_Run_App.Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5dec82588a2de708aa6225e0914ceea18.LocationHandler
-Simple_Run_App.Droid.LocationHandler;md5dec82588a2de708aa6225e0914ceea18.LocationHandler
-simple_run_app.droid.LocationHandler;md5dec82588a2de708aa6225e0914ceea18.LocationHandler
 Simple_Run_App.Droid.MainActivity, Simple_Run_App.Android;md5dec82588a2de708aa6225e0914ceea18.MainActivity
 Simple_Run_App.Droid.MainActivity, Simple_Run_App.Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5dec82588a2de708aa6225e0914ceea18.MainActivity
 Simple_Run_App.Droid.MainActivity;md5dec82588a2de708aa6225e0914ceea18.MainActivity

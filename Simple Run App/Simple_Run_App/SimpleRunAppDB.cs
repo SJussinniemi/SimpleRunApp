@@ -17,7 +17,6 @@ namespace Simple_Run_App
             database = new SQLiteAsyncConnection(dbPath);
             database.CreateTableAsync<ExerciseTable>().Wait();
             database.CreateTableAsync<CoordinatesTable>().Wait();
-            Debug.WriteLine("Done");
         }
 
         public Task<List<ExerciseTable>> GetItemsAsync()

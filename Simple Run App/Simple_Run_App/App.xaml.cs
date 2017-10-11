@@ -39,12 +39,10 @@ namespace Simple_Run_App
             Exercise exercise = new Exercise();
             exercise.GetCurrentLocationAsync();
 
-
             //Creates Database
             string path = DependencyService.Get<IFileHelper>().GetLocalFilePath("SimpleRunAppDB.db3");
             database = new SimpleRunAppDB(path);
             
-
         }
 
         protected override void OnSleep()
