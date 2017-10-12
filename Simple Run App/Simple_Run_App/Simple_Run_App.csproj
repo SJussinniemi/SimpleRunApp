@@ -38,6 +38,7 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="CalculationClass.cs" />
     <Compile Include="CoordinatesTable.cs" />
     <Compile Include="Exercise.xaml.cs">
       <DependentUpon>Exercise.xaml</DependentUpon>
