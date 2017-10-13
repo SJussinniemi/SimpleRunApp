@@ -60,27 +60,6 @@ namespace Simple_Run_App
 
             IsRunning = false;
         }
-
-        private async void drawButton_Clicked(object sender, EventArgs e)
-        {
-            var db = App.database;
-
-            try
-            {
-                var results = new List<ExerciseTable>();
-                results = await db.GetItemsAsync();
-
-                CurLocLongitude.Text = "Count of rows in list: " + results.Count().ToString();
-
-                Ticktimes.Text = results[0].ID + ": " + results[0].DATETIME.ToString() + " " + results[0].DURATION;
-
-            }
-            catch (Exception ex)
-            {
-                CurLocLongitude.Text = ex.ToString();
-            }
-        }
-
         public async void GetCurrentLocationAsync()
         {
             try

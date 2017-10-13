@@ -63,16 +63,10 @@
         <Label x:Name="CurLocLongitude"
                Text="cur location longitude"
                />
-            
-        <Label x:Name="Ticktimes"
+
+            <Label x:Name="Ticktimes"
                Text="Device Timer ticks :"
                />
-
-            <Button x:Name="drawButton"
-                Text="Draw Test Route"
-                    Clicked="drawButton_Clicked"
-                />
-
         </StackLayout>
 </ScrollView>
     
