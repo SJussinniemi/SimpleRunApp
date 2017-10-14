@@ -12,14 +12,20 @@ namespace Simple_Run_App
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class HistoryPage : ContentPage
     {
+        int aux;
+        int i;
+       Boolean delate = false;
         public HistoryPage()
         {
             InitializeComponent();
             //ExerciseView.IsEnabled = false;
+            aux = 0;
+            entryID.IsEnabled = false;
         }
         private async void ShowHistory(object sender, EventArgs e)
         {
             var db = App.database;
+            BtnHistory.Text = "Refresh History";
             //ExerciseView.IsEnabled = true;
             try
             {
@@ -27,19 +33,39 @@ namespace Simple_Run_App
                 show = await db.GetItemsAsync();
                 NumElements.Text = "Count of rows in list: " + show.Count().ToString();
                 //StackLayout s1 = new StackLayout();
-                for (int i=0; i<show.Count(); i++)
+                for (i = aux; i<show.Count(); i++)// Creatting tje Labels
                 {
-                    //Values.Text = show[i].ID + ": " + show[i].DATETIME.ToString() + " " + show[i].DURATION + " " + show[i].DISTANCE + " " + show[i].AVGSPEED;
-                 
-                    //label.Text = show[i].ID + ": " + show[i].DATETIME.ToString() + " " + show[i].DURATION + " " + show[i].DISTANCE + " " + show[i].AVGSPEED;
-                    historyPage.Children.Add(new Label {Text= show[i].ID + ": " + show[i].DATETIME.ToString() + " " + show[i].DURATION + " " + show[i].DISTANCE + " " + show[i].AVGSPEED});
+                    historyPage.Children.Add(new Label {Text= show[i].ID + ": " + show[i].DATETIME.ToString() + "\n " + show[i].DURATION + "\n " + show[i].DISTANCE + "\n " + show[i].AVGSPEED});
                 }
                 Content = historyPage;
+                aux = i;// If the user add a new Exercise history, the next time when i press this btn the for starts in the las position and prints only the last additions
             }
             catch (Exception ex)
             {
                 NumElements.Text = ex.ToString();
             }
+        }
+        private async void DelateExer(object sender, EventArgs e)
+        {
+            var db = App.database;
+            var list = new List<ExerciseTable>();
+            list = await db.GetItemsAsync();
+
+            int IDExer=0; //The Exercise ID that the user wants to delate.
+            entryID.IsEnabled = true;
+            do
+            {
+                IDExer = int.Parse(entryID.Text);
+                if (IDExer < 0 || IDExer > list.Count())
+                {
+                    await DisplayAlert("Sorry!!", "The ID does not Exist, please put another one", "ok");
+                }
+                else
+                    delate = true;
+            } while (!delate);
+
+            await db.DeleteItemAsync(list[IDExer-1]); //Delate this list frome the dataBase, i dont know if its works...
+            entryID.IsEnabled = false;
         }
     }
 }

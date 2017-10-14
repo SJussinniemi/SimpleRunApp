@@ -3,12 +3,21 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Simple_Run_App.HistoryPage"
              Title="History">
-    <StackLayout x:Name="historyPage">
-        
-        <Button x:Name="BtnHistory"
-                Text="Exercise History"
-                Clicked="ShowHistory"/>
-        <Label x:Name="NumElements"/>
-    </StackLayout>
+    <ScrollView>
+        <StackLayout x:Name="historyPage">
+            <Button x:Name="DelateBtn"
+                    Text="Delate Exercise"
+                    Clicked="DelateExer"
+                    />
+            <Entry x:Name="entryID"
+                   Text="ID's Item"
+                   Keyboard="Numeric"/>
+
+            <Button x:Name="BtnHistory"
+                    Text="Exercise History"
+                    Clicked="ShowHistory"/>
+            <Label x:Name="NumElements"/>
+        </StackLayout>
+    </ScrollView>
     
 </ContentPage>

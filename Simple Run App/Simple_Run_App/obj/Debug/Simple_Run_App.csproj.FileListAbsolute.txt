@@ -154,3 +154,4 @@ C:\Users\samsung\Source\Repos\NewRepo\Simple Run App\Simple_Run_App\obj\Debug\Si
 C:\Users\samsung\Source\Repos\NewRepo\Simple Run App\Simple_Run_App\obj\Debug\Simple_Run_App.Exercise.xaml.g.cs
 C:\Users\samsung\Source\Repos\NewRepo\Simple Run App\Simple_Run_App\obj\Debug\Simple_Run_App.dll
 C:\Users\samsung\Source\Repos\NewRepo\Simple Run App\Simple_Run_App\obj\Debug\Simple_Run_App.pdb
+C:\Users\samsung\Source\Repos\NewRepo\Simple Run App\Simple_Run_App\obj\Debug\Simple_Run_App.csprojResolveAssemblyReference.cache
