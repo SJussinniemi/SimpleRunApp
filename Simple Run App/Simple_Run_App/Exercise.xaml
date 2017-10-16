@@ -53,10 +53,8 @@
                 Text="End"
                 Clicked="EndBtn_ClickedAsync"    
                 />
-
-
-
-        <Label x:Name="CurLocLatitude"
+            
+            <Label x:Name="CurLocLatitude"
                Text="cur location latitude"
                />
 
