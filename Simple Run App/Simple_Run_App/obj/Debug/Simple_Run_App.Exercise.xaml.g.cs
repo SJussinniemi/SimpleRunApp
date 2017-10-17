@@ -11,8 +11,8 @@
 namespace Simple_Run_App {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("G:\\Downloads\\Git\\repositories\\new\\SimpleRunApp\\Simple Run App\\Simple_Run_App\\Exer" +
-        "cise.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("H:\\Koodia\\HIMA\\XamarinProjekti\\SimpleRunApp\\Simple Run App\\Simple_Run_App\\Exercis" +
+        "e.xaml")]
     public partial class Exercise : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
@@ -40,18 +40,6 @@ namespace Simple_Run_App {
         private global::Xamarin.Forms.Button EndBtn;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
-        private global::Xamarin.Forms.Label CurLocLatitude;
-        
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
-        private global::Xamarin.Forms.Label CurLocLongitude;
-        
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
-        private global::Xamarin.Forms.Label Ticktimes;
-        
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
-        private global::Xamarin.Forms.Button drawButton;
-        
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
             global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(Exercise));
             exerciseMap = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Simple_Run_App.ExerciseMap>(this, "exerciseMap");
@@ -62,10 +50,6 @@ namespace Simple_Run_App {
             PauseBtn = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Button>(this, "PauseBtn");
             ResumeBtn = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Button>(this, "ResumeBtn");
             EndBtn = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Button>(this, "EndBtn");
-            CurLocLatitude = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Label>(this, "CurLocLatitude");
-            CurLocLongitude = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Label>(this, "CurLocLongitude");
-            Ticktimes = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Label>(this, "Ticktimes");
-            drawButton = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Button>(this, "drawButton");
         }
     }
 }

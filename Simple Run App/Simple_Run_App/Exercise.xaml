@@ -16,17 +16,17 @@
                 />
 
             <Label x:Name="TimerLabel"
-               Text="Timer Label"
+               Text="Timer"
                FontSize="Medium"
                />
 
         <Label x:Name="TimerCurSpeed"
-               Text="CurrentSpeed Label"
+               Text="Speed"
                FontSize="Medium"
                />
 
         <Label x:Name="TimerDistance"
-               Text="Distance Label"
+               Text="Distance"
                FontSize="Medium"
                />
 
@@ -53,26 +53,6 @@
                 Text="End"
                 Clicked="EndBtn_ClickedAsync"    
                 />
-
-
-
-        <Label x:Name="CurLocLatitude"
-               Text="cur location latitude"
-               />
-
-        <Label x:Name="CurLocLongitude"
-               Text="cur location longitude"
-               />
-            
-        <Label x:Name="Ticktimes"
-               Text="Device Timer ticks :"
-               />
-
-            <Button x:Name="drawButton"
-                Text="Draw Test Route"
-                    Clicked="drawButton_Clicked"
-                />
-
         </StackLayout>
 </ScrollView>
     

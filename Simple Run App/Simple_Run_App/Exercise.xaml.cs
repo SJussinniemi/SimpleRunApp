@@ -33,15 +33,13 @@ namespace Simple_Run_App
         double lat; // Location latitude
         double lon; // Location longitude
         Boolean IsRunning; // For Device timer handling
+        //Boolean pause = false;
         bool loc = false;
-        int i = 0; // For develop purposes. Tracks How Many times Device.StartTimer has looped.
-        ///////////
-        public String DataSend;
-        Boolean pause = false;
+
         int hr = 0;
         int min = 0;
         int sec = 0;
-        int cont = 0;//Only For testting 
+
         // ---------- Vars Total Distance -------------
         double lat1 = 0.0, long1 = 0.0;//At the beginning initialize with the actual position
         double lat2 = 0.0, long2 = 0.0;
@@ -53,44 +51,36 @@ namespace Simple_Run_App
 
         private void StartBtn_Clicked(object sender, EventArgs e)
         {
-            pause = true;
-            // Get starting position WOIP perhaps Loading screen later.
-            //GetCurrentLocationAsync();
+            //pause = true;
+            IsRunning = true;
 
             PauseBtn.IsVisible = true;
             StartBtn.IsVisible = false;
-            EndBtn.IsEnabled = true;
+            EndBtn.IsEnabled = false;
 
-            IsRunning = true;
             StartingPoint();
-            StartTimer();
             StartRunning();
-
         }
 
         private void onPause_Clicked(object sender, EventArgs e)
         {
-            pause = false;
+            //pause = false;
+            IsRunning = false;
 
             PauseBtn.IsVisible = false;
             ResumeBtn.IsVisible = true;
             EndBtn.IsEnabled = true;
-
-            IsRunning = false;
         }
 
         private async void EndBtn_ClickedAsync(object sender, EventArgs e)
         {
+            //pause = false;
+            IsRunning = false;
 
             StartBtn.IsVisible = true;
             PauseBtn.IsVisible = false;
             ResumeBtn.IsVisible = false;
             EndBtn.IsEnabled = false;
-
-            pause = false;
-            IsRunning = false;
-            CurLocLatitude.Text = "End Button pressed";
-            i = 0;
 
             bool answer = await DisplayAlert("Great Run!", "Would you like to save it to history?", "Yes", "No");
 
@@ -98,7 +88,6 @@ namespace Simple_Run_App
             {
                 try
                 {
-                    CurLocLongitude.Text = "juostu";
                     var db = App.database;
 
                     var tableItems = new ExerciseTable
@@ -114,27 +103,21 @@ namespace Simple_Run_App
                 }
                 catch (SQLiteException ex)
                 {
-                    CurLocLongitude.Text = ex.ToString();
+                    TimerLabel.Text = ex.ToString();
                 }
             }
         }
 
         private void ResumeBtn_Clicked(object sender, EventArgs e)
         {
+            //pause = true;
+            IsRunning = true;
+
             PauseBtn.IsVisible = true;
             ResumeBtn.IsVisible = false;
+            EndBtn.IsEnabled = false;
 
-            pause = true;
-            StartTimer();
-
-            IsRunning = true;
             StartRunning();
-        }
-
-        //For test usage, do not remove yet.
-        private void drawButton_Clicked(object sender, EventArgs e)
-        {
-
         }
 
         public async void GetCurrentLocationAsync()
@@ -148,93 +131,73 @@ namespace Simple_Run_App
                 lat = position.Latitude;
                 lon = position.Longitude;
 
-                CurLocLongitude.Text = lon.ToString();
-                CurLocLatitude.Text = lat.ToString();
                 loc = true;
             }
             catch (Exception ex)
             {
-                CurLocLatitude.Text = ex.ToString();
+                TimerLabel.Text = ex.ToString();
             }
 
         }
 
         public void StartRunning()
         {
-            Device.StartTimer(TimeSpan.FromSeconds(5), () => {
+            Device.StartTimer(TimeSpan.FromSeconds(1), () => {
 
                 GetCurrentLocationAsync();
 
                 if (loc == true)
                 {
+             
                     var list = new List<Position>(exerciseMap.RouteCoordinates);
                     list.Add(new Position(lat, lon));
                     exerciseMap.RouteCoordinates = list;
 
-                    Ticktimes.Text = "Device Timer ticks :" + i.ToString();
-                    i++;
-
                     exerciseMap.MoveToRegion(MapSpan.FromCenterAndRadius(new Position(lat, lon), Distance.FromKilometers(0.1)));
-                    TotalDistance(lat, lon);
+                    Calculations(lat, lon);
 
+                    sec++;
+                    if (sec == 60)
+                    {
+                        min++;
+                        sec = 0;
+                    }
+                    else if (min == 60)
+                    {
+                        hr++;
+                        min = 0;
+                    }
+                    else if (hr == 24)
+                    {
+                        hr = 0;
+                    }
+
+                    TimerLabel.Text = hr.ToString() + " h: " + min.ToString() + " m: " + sec.ToString() + " s";
+                    return IsRunning; // True = Repeat again, False = Stop the timer
                 }
                 return IsRunning;
-
             });
         }
 
-        //TODO MERGE STARTRUNNING & STARTIMER
-
-        public void StartTimer()
-        {
-
-            Device.StartTimer(TimeSpan.FromSeconds(1), () =>
-            {
-                sec++;
-                if (sec == 60)
-                {
-                    min++;
-                    sec = 0;
-                }
-                if (min == 60)
-                {
-                    hr++;
-                    min = 0;
-                }
-                if (hr == 24) hr = 0;
-
-                TimerLabel.Text = hr.ToString() + " h: " + min.ToString() + " m: " + sec.ToString() + " s";
-                Calculations();
-                return pause; // True = Repeat again, False = Stop the timer
-
-            });
-        }
-
-        public void Calculations()
-        {
-            CalculationClass calculationClass = new CalculationClass();
-
-            FinalSpeed = calculationClass.finalSpeed(FinalDistance, hr, min, sec);
-
-            TimerDistance.Text = "Distance: " + FinalDistance.ToString();
-            TimerCurSpeed.Text = "Speed " + FinalSpeed.ToString();
-            TimerLabel.Text = hr.ToString() + " h: " + min.ToString() + " m: " + sec.ToString() + " s";
-
-        }
-
-        // TODO MERGE CALCULATIONS & TOTALDISTANCE METHODS
-
-        public void TotalDistance(double nextLat, double nextLong)
+        public void Calculations(double nextLat, double nextLong)
         {
             lat2 = nextLat;
             long2 = nextLong;
+
             CalculationClass calculationClass = new CalculationClass();
+
             Distance2 = calculationClass.DistanceBtwnTwoPnts(lat1, long1, lat2, long2);
             FinalDistance = FinalDistance + Distance2;
             Distance2 = 0;
             //Now the second point is the first one and we wait for the coordinates of the next point
             lat1 = lat2;
             long1 = long2;
+
+            FinalSpeed = calculationClass.finalSpeed(FinalDistance, hr, min, sec);
+   
+            TimerDistance.Text = "Distance: " + FinalDistance.ToString() + " Meters";
+            TimerCurSpeed.Text = "Speed: " + FinalSpeed.ToString() + " Km/h";
+            TimerLabel.Text = hr.ToString() + " h: " + min.ToString() + " m: " + sec.ToString() + " s";
         }
 
         public async void StartingPoint()
@@ -256,7 +219,7 @@ namespace Simple_Run_App
             }
             catch (Exception ex)
             {
-                CurLocLatitude.Text = ex.ToString();
+                TimerLabel.Text = ex.ToString();
             }
 
         }

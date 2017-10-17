@@ -21,7 +21,7 @@ namespace Simple_Run_App
             double SupLong = ((longi2 - longi1) * Math.PI) / 180.0;
             FirstFormula = (Math.Sin(SupLat / 2) * Math.Sin(SupLat / 2)) + Math.Cos(SupLat) * Math.Cos(SupLong) * (Math.Sin(SupLong / 2) * Math.Sin(SupLong / 2));
             SecondFormula = 2 * Math.Atan2(Math.Sqrt(FirstFormula), Math.Sqrt(1 - FirstFormula));
-            double Distance = R * SecondFormula;
+            double Distance = Math.Round(R * SecondFormula, 2);
             return Distance;
         }
 
@@ -30,16 +30,16 @@ namespace Simple_Run_App
             double T = (3600.0 * h) + (60.0 * m) + s;
             T = (T / 3600.0);// Becouse T is in sec and we need hours
             double D = (distnc / 1000);// Because distnc is in metres and we need Km
-            Fspd = D / T;//Speed in km/h
+            Fspd = Math.Round(D / T , 2);//Speed in km/h
             return Fspd;
         }
 
         public double currentSpeed(double distance)
         {
-            double T = 5;// Period in the Device.StartTimer(...) TODO CHANGE THIS
+            double T = 1;// Period in the Device.StartTimer(...) TODO CHANGE THIS
             T = (T / 3600.0);
             double D = (distance / 1000);
-            Cspd = D / T;
+            Math.Round(Cspd = D / T , 2);
             return Cspd;
         }
     }
