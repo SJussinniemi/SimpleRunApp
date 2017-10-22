@@ -9,9 +9,10 @@ using Xamarin.Forms.Maps.Android;
 using Xamarin.Forms.Platform.Android;
 
 [assembly: ExportRenderer(typeof(ExerciseMap), typeof(CustomMapRenderer))]
+//[assembly: Dependency(typeof(IMaphelper))]
 namespace MapOverlay.Droid
 {
-    public class CustomMapRenderer : MapRenderer, IOnMapReadyCallback
+    public class CustomMapRenderer : MapRenderer, IOnMapReadyCallback //, IMapHelper
     {
         Polyline polyline;
         
@@ -59,6 +60,10 @@ namespace MapOverlay.Droid
             }
 
             NativeMap.AddPolyline(polylineOptions);
+        }
+        public void RemoveLines()
+        {
+            NativeMap.Clear();
         }
 
     }

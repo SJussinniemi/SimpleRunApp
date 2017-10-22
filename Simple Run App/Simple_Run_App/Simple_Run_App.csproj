@@ -50,6 +50,7 @@
       <DependentUpon>HistoryPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="IFileHelper.cs" />
+    <Compile Include="IMapHelper.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>

@@ -39,7 +39,7 @@ namespace Simple_Run_App
             double T = 1;// Period in the Device.StartTimer(...) TODO CHANGE THIS
             T = (T / 3600.0);
             double D = (distance / 1000);
-            Math.Round(Cspd = D / T , 2);
+            Cspd = Math.Round(D / T , 2);
             return Cspd;
         }
     }

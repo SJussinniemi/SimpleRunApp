@@ -33,9 +33,7 @@ namespace Simple_Run_App
         double lat; // Location latitude
         double lon; // Location longitude
         Boolean IsRunning; // For Device timer handling
-        //Boolean pause = false;
         bool loc = false;
-
         int hr = 0;
         int min = 0;
         int sec = 0;
@@ -47,11 +45,12 @@ namespace Simple_Run_App
         //--------------------------------------------
         // --------Vars Final Speed ------------------
         double FinalSpeed = 0.0;
+        double CurrentSpeed = 0.0;
         //--------------------------------------------
 
         private void StartBtn_Clicked(object sender, EventArgs e)
         {
-            //pause = true;
+            ResetValues();
             IsRunning = true;
 
             PauseBtn.IsVisible = true;
@@ -64,7 +63,7 @@ namespace Simple_Run_App
 
         private void onPause_Clicked(object sender, EventArgs e)
         {
-            //pause = false;
+
             IsRunning = false;
 
             PauseBtn.IsVisible = false;
@@ -74,7 +73,7 @@ namespace Simple_Run_App
 
         private async void EndBtn_ClickedAsync(object sender, EventArgs e)
         {
-            //pause = false;
+
             IsRunning = false;
 
             StartBtn.IsVisible = true;
@@ -86,6 +85,8 @@ namespace Simple_Run_App
 
             if (answer)
             {
+                CalculationClass calculationsClass = new CalculationClass();
+                FinalSpeed = calculationsClass.finalSpeed(FinalSpeed, hr, min, sec);
                 try
                 {
                     var db = App.database;
@@ -94,7 +95,7 @@ namespace Simple_Run_App
                     {
                         DURATION = TimerLabel.Text,
                         DISTANCE = TimerDistance.Text,
-                        AVGSPEED = TimerDistance.Text,
+                        AVGSPEED = FinalSpeed.ToString(),
                         DATETIME = DateTime.Now
                     };
 
@@ -110,7 +111,7 @@ namespace Simple_Run_App
 
         private void ResumeBtn_Clicked(object sender, EventArgs e)
         {
-            //pause = true;
+
             IsRunning = true;
 
             PauseBtn.IsVisible = true;
@@ -154,9 +155,16 @@ namespace Simple_Run_App
                     exerciseMap.RouteCoordinates = list;
 
                     exerciseMap.MoveToRegion(MapSpan.FromCenterAndRadius(new Position(lat, lon), Distance.FromKilometers(0.1)));
+
                     Calculations(lat, lon);
 
                     sec++;
+
+                    if (sec % 30 == 0)
+                    {
+                        exerciseMap.MoveToRegion(MapSpan.FromCenterAndRadius(new Position(lat, lon), Distance.FromKilometers(0.1)));
+                    }
+
                     if (sec == 60)
                     {
                         min++;
@@ -193,10 +201,10 @@ namespace Simple_Run_App
             lat1 = lat2;
             long1 = long2;
 
-            FinalSpeed = calculationClass.finalSpeed(FinalDistance, hr, min, sec);
+            CurrentSpeed = calculationClass.currentSpeed(Distance2);
    
             TimerDistance.Text = "Distance: " + FinalDistance.ToString() + " Meters";
-            TimerCurSpeed.Text = "Speed: " + FinalSpeed.ToString() + " Km/h";
+            TimerCurSpeed.Text = "Speed: " + CurrentSpeed.ToString() + " Km/h";
             TimerLabel.Text = hr.ToString() + " h: " + min.ToString() + " m: " + sec.ToString() + " s";
         }
 
@@ -216,12 +224,37 @@ namespace Simple_Run_App
 
                 lat2 = lat;
                 long2 = lon;
+
+                exerciseMap.MoveToRegion(MapSpan.FromCenterAndRadius(new Position(lat, lon), Distance.FromKilometers(0.1)));
             }
             catch (Exception ex)
             {
                 TimerLabel.Text = ex.ToString();
             }
 
+        }
+
+        public void ResetValues()
+        {
+            // Reset all values and labels for next run.
+            hr = 0;
+            min = 0;
+            sec = 0;
+
+            Distance2 = 0;
+            FinalDistance = 0;
+            FinalSpeed = 0;
+            CurrentSpeed = 0;
+
+            // ** TODO ***
+            //DependencyService.Get<IMaphelper>().RemoveLines();
+
+
+            exerciseMap.RouteCoordinates.Clear();
+
+            TimerLabel.Text = hr.ToString() + " h: " + min.ToString() + " m: " + sec.ToString() + " s";
+            TimerDistance.Text = "Distance: " + FinalDistance.ToString() + " Meters";
+            TimerCurSpeed.Text = "Speed: " + CurrentSpeed.ToString() + " Km/h";
         }
     }
 }
