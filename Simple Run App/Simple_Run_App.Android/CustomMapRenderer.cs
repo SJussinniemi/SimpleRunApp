@@ -61,10 +61,10 @@ namespace MapOverlay.Droid
 
             NativeMap.AddPolyline(polylineOptions);
         }
-        public void RemoveLines()
-        {
-            NativeMap.Clear();
-        }
+        //public void RemoveLines()
+        //{
+        //    NativeMap.Clear();
+        //}
 
     }
 }

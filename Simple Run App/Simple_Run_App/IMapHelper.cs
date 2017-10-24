@@ -8,6 +8,6 @@ namespace Simple_Run_App
 {
     class IMapHelper
     {
-        void RemoveLines();
+        //void RemoveLines();
     }
 }

@@ -16,6 +16,7 @@ namespace Simple_Run_App
         int i;
         public HistoryPage()
         {
+            
             InitializeComponent();
             //ExerciseView.IsEnabled = false;
             aux = 0;
@@ -43,7 +44,8 @@ namespace Simple_Run_App
                     {
                         historyPage.Children.Add(new Label { Text = "Exercise number: " + show[i].ID + " - Delete Code: " + i + "\n Date: " + show[i].DATETIME.ToString() + "\n " + show[i].DURATION + "\n " + show[i].DISTANCE + "\n " + show[i].AVGSPEED });
                     }
-                    Content = historyPage;
+                    Content = new ScrollView { Content = historyPage };
+                    //Content = historyPage;
                     aux = i;// If the user add a new Exercise history, the next time when i press this btn the for starts in the las position and prints only the last additions
                 }
             }
