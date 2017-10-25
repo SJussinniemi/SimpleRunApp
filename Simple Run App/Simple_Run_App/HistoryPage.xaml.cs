@@ -40,10 +40,9 @@ namespace Simple_Run_App
                             bool answer = await DisplayAlert("Notice!", "Are you sure you want to delete this exercise?", "Yes", "No");
                             if (answer)
                             {
-                                delateExercise(elem);
+                                await db.DeleteItemAsync(show[elem]);
                             }
-
-                        })
+                         })
                     });
                 }
 
@@ -54,14 +53,6 @@ namespace Simple_Run_App
             {
                 debug.Text = ex.ToString();
             }
-        }
-        public async void delateExercise (int x)
-        {
-            var db = App.database;
-            var list = new List<ExerciseTable>();
-            list = await db.GetItemsAsync();
-
-            await db.DeleteItemAsync(list[x]);
         }
 
         protected override void OnDisappearing()
