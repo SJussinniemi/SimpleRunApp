@@ -21,16 +21,16 @@ namespace Simple_Run_App
             //ExerciseView.IsEnabled = false;
             aux = 0;
         }
-        private async void ShowHistory(object sender, EventArgs e)
+
+        protected override async void OnAppearing()
         {
+            base.OnAppearing();
             var db = App.database;
-            BtnHistory.Text = "Refresh/close History";
-            DeleteBtn.IsEnabled = true;
-            entryID.IsEnabled = true;
+            var show = new List<ExerciseTable>();
+            show = await db.GetItemsAsync();
+
             try
             {
-                var show = new List<ExerciseTable>();
-                show = await db.GetItemsAsync();
                 NumElements.Text = "Count of rows in list: " + show.Count().ToString();
                 //StackLayout s1 = new StackLayout();
                 if (aux == show.Count())
@@ -42,8 +42,8 @@ namespace Simple_Run_App
                 {
                     for (i = aux; i < show.Count(); i++)// Creatting tje Labels
                     {
-                        historyPage.Children.Add(new Label { Text = "Exercise number: " + show[i].ID + " - Delete Code: " + i + "\n Date: " + show[i].DATETIME.ToString() + "\n " + show[i].DURATION + "\n " + show[i].DISTANCE + "\n " + show[i].AVGSPEED });
-                        
+                        historyPage.Children.Add(new Label { Text = "Exercise number: " + show[i].ID + " - Delete Code: " + i + "\n Date: " + show[i].DATETIME.ToString() + "\n " + show[i].DURATION + "\n " + show[i].DISTANCE + "\n Average Speed: " + show[i].AVGSPEED + " Km/h" });
+                        historyPage.Children.Add(new Button { Text = "Delete" });
                     }
                     Content = new ScrollView { Content = historyPage };
                     //Content = historyPage;
@@ -55,6 +55,7 @@ namespace Simple_Run_App
                 NumElements.Text = ex.ToString();
             }
         }
+
         private async void DelateExer(object sender, EventArgs e)
         {
 

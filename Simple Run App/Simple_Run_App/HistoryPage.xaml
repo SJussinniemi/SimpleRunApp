@@ -15,9 +15,6 @@
                    IsEnabled="False"
                    Keyboard="Numeric"/>
 
-        <Button x:Name="BtnHistory"
-                    Text="Exercise History"
-                    Clicked="ShowHistory"/>
         <Label x:Name="NumElements"/>
     </StackLayout>
 </ContentPage>
