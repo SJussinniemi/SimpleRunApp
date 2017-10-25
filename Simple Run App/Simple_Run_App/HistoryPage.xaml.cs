@@ -43,6 +43,7 @@ namespace Simple_Run_App
                     for (i = aux; i < show.Count(); i++)// Creatting tje Labels
                     {
                         historyPage.Children.Add(new Label { Text = "Exercise number: " + show[i].ID + " - Delete Code: " + i + "\n Date: " + show[i].DATETIME.ToString() + "\n " + show[i].DURATION + "\n " + show[i].DISTANCE + "\n " + show[i].AVGSPEED });
+                        
                     }
                     Content = new ScrollView { Content = historyPage };
                     //Content = historyPage;

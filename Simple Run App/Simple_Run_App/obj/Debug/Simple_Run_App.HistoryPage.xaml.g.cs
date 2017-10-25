@@ -11,8 +11,8 @@
 namespace Simple_Run_App {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("H:\\Koodia\\HIMA\\XamarinProjekti\\SimpleRunApp\\Simple Run App\\Simple_Run_App\\History" +
-        "Page.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("G:\\Downloads\\Git\\repositories\\new\\SimpleRunApp\\Simple Run App\\Simple_Run_App\\Hist" +
+        "oryPage.xaml")]
     public partial class HistoryPage : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]

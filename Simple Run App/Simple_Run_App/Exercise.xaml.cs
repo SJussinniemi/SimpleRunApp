@@ -153,9 +153,6 @@ namespace Simple_Run_App
                     var list = new List<Position>(exerciseMap.RouteCoordinates);
                     list.Add(new Position(lat, lon));
                     exerciseMap.RouteCoordinates = list;
-
-                    exerciseMap.MoveToRegion(MapSpan.FromCenterAndRadius(new Position(lat, lon), Distance.FromKilometers(0.1)));
-
                     Calculations(lat, lon);
 
                     sec++;
