@@ -27,17 +27,20 @@ namespace Simple_Run_App
             show = await db.GetItemsAsync();
 
             try
-            {  
+            {
                 for (int i = 0; i < show.Count(); i++)
                 {
-                    historyPage.Children.Add(new Label {FontSize = 16, Text = " Exercise number: " + show[i].ID + "\n Date: " + show[i].DATETIME.ToString() + "\n " + show[i].DURATION + "\n " + show[i].DISTANCE + "\n Average Speed: " + show[i].AVGSPEED + " Km/h" });
-                    historyPage.Children.Add(new Button { Text = "Delete",
+                    int elem = i;
+                    historyPage.Children.Add(new Label { FontSize = 16, Text = " Exercise number: " + show[i].ID + "\n Date: " + show[i].DATETIME.ToString() + "\n " + show[i].DURATION + "\n " + show[i].DISTANCE + "\n Average Speed: " + show[i].AVGSPEED + " Km/h" });
+                    historyPage.Children.Add(new Button
+                    {
+                        Text = "Delete",
                         Command = new Command(async () => {
 
                             bool answer = await DisplayAlert("Notice!", "Are you sure you want to delete this exercise?", "Yes", "No");
                             if (answer)
                             {
-
+                                await db.DeleteItemAsync(show[elem]);                              
                             }
 
                         })
@@ -45,7 +48,7 @@ namespace Simple_Run_App
                 }
 
                 Content = new ScrollView { Content = historyPage };
-                
+
             }
             catch (Exception ex)
             {
