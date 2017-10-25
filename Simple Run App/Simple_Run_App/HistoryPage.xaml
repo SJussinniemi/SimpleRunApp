@@ -5,16 +5,11 @@
              Title="History">
 
     <StackLayout x:Name="historyPage">
-        <Button x:Name="DeleteBtn"
-                    Text="Delate Exercise"
-                    IsEnabled="False"
-                    Clicked="DelateExer"
-                    />
-        <Entry x:Name="entryID"
-                   Placeholder="Delete Code"
-                   IsEnabled="False"
-                   Keyboard="Numeric"/>
 
-        <Label x:Name="NumElements"/>
+        <Label 
+            x:Name="debug"
+            Text=""
+            />
+        
     </StackLayout>
 </ContentPage>
