@@ -16,7 +16,6 @@ namespace Simple_Run_App
         public HistoryPage()
         {
             InitializeComponent();
-            //ExerciseView.IsEnabled = false;
         }
 
         protected override async void OnAppearing()
@@ -30,17 +29,18 @@ namespace Simple_Run_App
             {
                 for (int i = 0; i < show.Count(); i++)
                 {
+                    //We show the elements inside the database, we create a button to delete it when the user whats
                     int elem = i;
                     historyPage.Children.Add(new Label { FontSize = 16, Text = " Exercise number: " + show[i].ID + "\n Date: " + show[i].DATETIME.ToString() + "\n " + show[i].DURATION + "\n " + show[i].DISTANCE + "\n Average Speed: " + show[i].AVGSPEED + " Km/h" });
                     historyPage.Children.Add(new Button
                     {
                         Text = "Delete",
-                        Command = new Command(async () => {
+                        Command = new Command(async () => { //the function of our button
 
                             bool answer = await DisplayAlert("Notice!", "Are you sure you want to delete this exercise?", "Yes", "No");
                             if (answer)
                             {
-                                await db.DeleteItemAsync(show[elem]);                              
+                                await db.DeleteItemAsync(show[elem]);  //delate de Exercise                            
                             }
 
                         })
